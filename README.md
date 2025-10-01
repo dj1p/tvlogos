@@ -1,10 +1,4 @@
-# I'm trying this for the 3rd time
-
-I now have an enterprise account. I hope GitHub will allow me to stay up this time. Please consider donating since enterprise accounts are not free.
-
-# Free high quality TV Logos for dark backgrounds
-
-Contact: tapio.sinnertwin(at)gmail.com - I will try my best to reply within 24hr.
+#Forked from: tapio.sinnertwin(at)gmail.com
 
 Here you will find free tv logos from around the world in good high-res quality and suitable for dark backgrounds.
 
