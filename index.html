@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Logos Browser</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: #a0a0a0;
+            font-size: 1.1em;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .search-box, .country-select {
+            flex: 1;
+            min-width: 200px;
+            padding: 15px 20px;
+            font-size: 16px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            color: #e0e0e0;
+            transition: all 0.3s ease;
+        }
+
+        .search-box:focus, .country-select:focus {
+            outline: none;
+            border-color: #667eea;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .country-select option {
+            background: #1a1a2e;
+            color: #e0e0e0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .logo-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-card:hover {
+            transform: translateY(-5px);
+            border-color: #667eea;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .logo-container {
+            width: 100%;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+
+        .logo-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .logo-name {
+            font-size: 14px;
+            word-break: break-word;
+            color: #b0b0b0;
+            margin-bottom: 8px;
+        }
+
+        .logo-path {
+            font-size: 12px;
+            color: #667eea;
+            font-family: 'Courier New', monospace;
+            word-break: break-all;
+        }
+
+        .copied-notification {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #667eea;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+            display: none;
+            animation: slideIn 0.3s ease;
+            z-index: 1000;
+        }
+
+        .copied-notification.show {
+            display: block;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(400px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .loading {
+            text-align: center;
+            padding: 60px;
+            font-size: 1.2em;
+            color: #a0a0a0;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px;
+            font-size: 1.2em;
+            color: #a0a0a0;
+        }
+
+        .stats {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #a0a0a0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .controls {
+                flex-direction: column;
+            }
+            
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📺 TV Logos Browser</h1>
+            <p class="subtitle">Click any logo to copy its URL</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" class="search-box" id="searchBox" placeholder="Search logos...">
+            <select class="country-select" id="countrySelect">
+                <option value="">All Countries</option>
+            </select>
+        </div>
+
+        <div class="stats" id="stats"></div>
+
+        <div class="grid" id="logoGrid">
+            <div class="loading">Loading logos...</div>
+        </div>
+    </div>
+
+    <div class="copied-notification" id="notification">
+        ✓ URL copied to clipboard!
+    </div>
+
+    <script>
+        const BASE_URL = window.location.origin;
+        let allLogos = [];
+        let filteredLogos = [];
+
+        // Country directory structure based on your repo
+        const countries = [
+            'albania', 'argentina', 'australia', 'austria', 'azerbaijan', 
+            'belgium', 'brazil', 'bulgaria', 'canada', 'caribbean', 
+            'chile', 'costa-rica', 'croatia', 'czech-republic', 
+            'nordic/denmark', 'nordic/finland', 'france', 'germany', 'greece', 
+            'hong-kong', 'hungary', 'nordic/iceland', 'india', 'indonesia', 
+            'international', 'israel', 'italy', 'lebanon', 'lithuania', 
+            'luxembourg', 'malaysia', 'malta', 'mexico', 'netherlands', 
+            'new-zealand', 'nordic', 'nordic/norway', 'philippines', 
+            'poland', 'portugal', 'romania', 'russia', 'serbia', 
+            'singapore', 'slovakia', 'slovenia', 'south-africa', 'spain', 
+            'nordic/sweden', 'switzerland', 'turkey', 'ukraine', 
+            'united-arab-emirates', 'united-kingdom', 'united-states',
+            'world-africa', 'world-asia', 'world-europe', 
+            'world-latin-america', 'world-middle-east'
+        ];
+
+        // Populate country dropdown
+        const countrySelect = document.getElementById('countrySelect');
+        countries.forEach(country => {
+            const option = document.createElement('option');
+            option.value = country;
+            option.textContent = country.split('/').pop().replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+            countrySelect.appendChild(option);
+        });
+
+        // Fetch logos from GitHub API
+        async function fetchLogos() {
+            const logoGrid = document.getElementById('logoGrid');
+            allLogos = [];
+
+            try {
+                // Fetch from each country directory
+                for (const country of countries) {
+                    try {
+                        const response = await fetch(`https://api.github.com/repos/dj1p/tvlogos/contents/countries/${country}`);
+                        const files = await response.json();
+                        
+                        if (Array.isArray(files)) {
+                            files.forEach(file => {
+                                if (file.name.endsWith('.png')) {
+                                    allLogos.push({
+                                        name: file.name,
+                                        path: `${BASE_URL}/countries/${country}/${file.name}`,
+                                        country: country
+                                    });
+                                }
+                            });
+                        }
+                    } catch (error) {
+                        console.log(`Could not fetch ${country}:`, error);
+                    }
+                }
+
+                filteredLogos = [...allLogos];
+                renderLogos();
+            } catch (error) {
+                logoGrid.innerHTML = '<div class="loading">Error loading logos. Please refresh the page.</div>';
+            }
+        }
+
+        function renderLogos() {
+            const logoGrid = document.getElementById('logoGrid');
+            const stats = document.getElementById('stats');
+            
+            if (filteredLogos.length === 0) {
+                logoGrid.innerHTML = '<div class="no-results">No logos found</div>';
+                stats.textContent = '';
+                return;
+            }
+
+            stats.textContent = `Showing ${filteredLogos.length} logo${filteredLogos.length !== 1 ? 's' : ''}`;
+
+            logoGrid.innerHTML = filteredLogos.map(logo => `
+                <div class="logo-card" onclick="copyToClipboard('${logo.path}')">
+                    <div class="logo-container">
+                        <img src="${logo.path}" alt="${logo.name}" loading="lazy">
+                    </div>
+                    <div class="logo-name">${logo.name.replace('.png', '')}</div>
+                    <div class="logo-path">${logo.path}</div>
+                </div>
+            `).join('');
+        }
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                const notification = document.getElementById('notification');
+                notification.classList.add('show');
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                }, 2000);
+            });
+        }
+
+        // Search functionality
+        document.getElementById('searchBox').addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const selectedCountry = document.getElementById('countrySelect').value;
+            
+            filteredLogos = allLogos.filter(logo => {
+                const matchesSearch = logo.name.toLowerCase().includes(searchTerm);
+                const matchesCountry = !selectedCountry || logo.country === selectedCountry;
+                return matchesSearch && matchesCountry;
+            });
+            
+            renderLogos();
+        });
+
+        // Country filter
+        document.getElementById('countrySelect').addEventListener('change', (e) => {
+            const selectedCountry = e.target.value;
+            const searchTerm = document.getElementById('searchBox').value.toLowerCase();
+            
+            filteredLogos = allLogos.filter(logo => {
+                const matchesSearch = !searchTerm || logo.name.toLowerCase().includes(searchTerm);
+                const matchesCountry = !selectedCountry || logo.country === selectedCountry;
+                return matchesSearch && matchesCountry;
+            });
+            
+            renderLogos();
+        });
+
+        // Load logos on page load
+        fetchLogos();
+    </script>
+</body>
+</html>
