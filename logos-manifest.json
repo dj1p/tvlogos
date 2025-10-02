@@ -1,6 +1,6 @@
 {
   "generated": "auto",
-  "total": 9869,
+  "total": 9927,
   "logos": [
     {
       "name": "thats-70s-uk.png",
@@ -19403,13 +19403,28 @@
       "country": "russia"
     },
     {
+      "name": "foxactionthai.png",
+      "path": "/countries/thailand/foxactionthai.png",
+      "country": "thailand"
+    },
+    {
       "name": "ch2.png",
       "path": "/countries/thailand/ch2.png",
       "country": "thailand"
     },
     {
+      "name": "disney.png",
+      "path": "/countries/thailand/disney.png",
+      "country": "thailand"
+    },
+    {
       "name": "One31.png",
       "path": "/countries/thailand/One31.png",
+      "country": "thailand"
+    },
+    {
+      "name": "truefilmasia.png",
+      "path": "/countries/thailand/truefilmasia.png",
       "country": "thailand"
     },
     {
@@ -19420,6 +19435,11 @@
     {
       "name": "ch7fhd.png",
       "path": "/countries/thailand/ch7fhd.png",
+      "country": "thailand"
+    },
+    {
+      "name": "trueseries.png",
+      "path": "/countries/thailand/trueseries.png",
       "country": "thailand"
     },
     {
@@ -19443,8 +19463,23 @@
       "country": "thailand"
     },
     {
+      "name": "babytv.png",
+      "path": "/countries/thailand/babytv.png",
+      "country": "thailand"
+    },
+    {
+      "name": "Moviesubthai.png",
+      "path": "/countries/thailand/Moviesubthai.png",
+      "country": "thailand"
+    },
+    {
       "name": "ch5new.logo.png",
       "path": "/countries/thailand/ch5new.logo.png",
+      "country": "thailand"
+    },
+    {
+      "name": "disneyxd.png",
+      "path": "/countries/thailand/disneyxd.png",
       "country": "thailand"
     },
     {
@@ -19473,8 +19508,18 @@
       "country": "thailand"
     },
     {
+      "name": "aniplus.png",
+      "path": "/countries/thailand/aniplus.png",
+      "country": "thailand"
+    },
+    {
       "name": "0013_R.png",
       "path": "/countries/thailand/0013_R.png",
+      "country": "thailand"
+    },
+    {
+      "name": "Movie1.png",
+      "path": "/countries/thailand/Movie1.png",
       "country": "thailand"
     },
     {
@@ -19503,6 +19548,21 @@
       "country": "thailand"
     },
     {
+      "name": "filmhd2.png",
+      "path": "/countries/thailand/filmhd2.png",
+      "country": "thailand"
+    },
+    {
+      "name": "movie4.png",
+      "path": "/countries/thailand/movie4.png",
+      "country": "thailand"
+    },
+    {
+      "name": "ctbtv.png",
+      "path": "/countries/thailand/ctbtv.png",
+      "country": "thailand"
+    },
+    {
       "name": "onefhd.png",
       "path": "/countries/thailand/onefhd.png",
       "country": "thailand"
@@ -19528,6 +19588,16 @@
       "country": "thailand"
     },
     {
+      "name": "classicmovies.png",
+      "path": "/countries/thailand/classicmovies.png",
+      "country": "thailand"
+    },
+    {
+      "name": "cartoonnetwork.png",
+      "path": "/countries/thailand/cartoonnetwork.png",
+      "country": "thailand"
+    },
+    {
       "name": "workpoint.png",
       "path": "/countries/thailand/workpoint.png",
       "country": "thailand"
@@ -19540,6 +19610,11 @@
     {
       "name": "gmm.png",
       "path": "/countries/thailand/gmm.png",
+      "country": "thailand"
+    },
+    {
+      "name": "monoplus.png",
+      "path": "/countries/thailand/monoplus.png",
       "country": "thailand"
     },
     {
@@ -19558,6 +19633,16 @@
       "country": "thailand"
     },
     {
+      "name": "foxthai.png",
+      "path": "/countries/thailand/foxthai.png",
+      "country": "thailand"
+    },
+    {
+      "name": "Movie2.png",
+      "path": "/countries/thailand/Movie2.png",
+      "country": "thailand"
+    },
+    {
       "name": "mono29.png",
       "path": "/countries/thailand/mono29.png",
       "country": "thailand"
@@ -19568,8 +19653,23 @@
       "country": "thailand"
     },
     {
+      "name": "hbohdeng.png",
+      "path": "/countries/thailand/hbohdeng.png",
+      "country": "thailand"
+    },
+    {
       "name": "muslim.png",
       "path": "/countries/thailand/muslim.png",
+      "country": "thailand"
+    },
+    {
+      "name": "animax.png",
+      "path": "/countries/thailand/animax.png",
+      "country": "thailand"
+    },
+    {
+      "name": "JKN.png",
+      "path": "/countries/thailand/JKN.png",
       "country": "thailand"
     },
     {
@@ -19588,8 +19688,38 @@
       "country": "thailand"
     },
     {
+      "name": "foxactionmovie.png",
+      "path": "/countries/thailand/foxactionmovie.png",
+      "country": "thailand"
+    },
+    {
       "name": "Channel_9_MCOT_HD_2017.png",
       "path": "/countries/thailand/Channel_9_MCOT_HD_2017.png",
+      "country": "thailand"
+    },
+    {
+      "name": "dramathai.png",
+      "path": "/countries/thailand/dramathai.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hbofam.png",
+      "path": "/countries/thailand/hbofam.png",
+      "country": "thailand"
+    },
+    {
+      "name": "chinesemovie.png",
+      "path": "/countries/thailand/chinesemovie.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hbohdth.png",
+      "path": "/countries/thailand/hbohdth.png",
+      "country": "thailand"
+    },
+    {
+      "name": "Star.chinese.movies.legend.png",
+      "path": "/countries/thailand/Star.chinese.movies.legend.png",
       "country": "thailand"
     },
     {
@@ -19598,13 +19728,28 @@
       "country": "thailand"
     },
     {
+      "name": "warner.png",
+      "path": "/countries/thailand/warner.png",
+      "country": "thailand"
+    },
+    {
       "name": "thairathfhd.png",
       "path": "/countries/thailand/thairathfhd.png",
       "country": "thailand"
     },
     {
+      "name": "foxp-eng.png",
+      "path": "/countries/thailand/foxp-eng.png",
+      "country": "thailand"
+    },
+    {
       "name": "MONO292025.png",
       "path": "/countries/thailand/MONO292025.png",
+      "country": "thailand"
+    },
+    {
+      "name": "truemoviehits.png",
+      "path": "/countries/thailand/truemoviehits.png",
       "country": "thailand"
     },
     {
@@ -19623,13 +19768,28 @@
       "country": "thailand"
     },
     {
+      "name": "disneyj.png",
+      "path": "/countries/thailand/disneyj.png",
+      "country": "thailand"
+    },
+    {
       "name": "mcot-hd.png",
       "path": "/countries/thailand/mcot-hd.png",
       "country": "thailand"
     },
     {
+      "name": "hbosig.png",
+      "path": "/countries/thailand/hbosig.png",
+      "country": "thailand"
+    },
+    {
       "name": "nation.png",
       "path": "/countries/thailand/nation.png",
+      "country": "thailand"
+    },
+    {
+      "name": "kix.png",
+      "path": "/countries/thailand/kix.png",
       "country": "thailand"
     },
     {
@@ -19648,8 +19808,28 @@
       "country": "thailand"
     },
     {
+      "name": "cinemax.png",
+      "path": "/countries/thailand/cinemax.png",
+      "country": "thailand"
+    },
+    {
+      "name": "MovieHD3.png",
+      "path": "/countries/thailand/MovieHD3.png",
+      "country": "thailand"
+    },
+    {
+      "name": "gangcartoon.png",
+      "path": "/countries/thailand/gangcartoon.png",
+      "country": "thailand"
+    },
+    {
       "name": "0159.png",
       "path": "/countries/thailand/0159.png",
+      "country": "thailand"
+    },
+    {
+      "name": "red.png",
+      "path": "/countries/thailand/red.png",
       "country": "thailand"
     },
     {
@@ -19678,8 +19858,23 @@
       "country": "thailand"
     },
     {
+      "name": "Movie6.png",
+      "path": "/countries/thailand/Movie6.png",
+      "country": "thailand"
+    },
+    {
+      "name": "thrill.png",
+      "path": "/countries/thailand/thrill.png",
+      "country": "thailand"
+    },
+    {
       "name": "amarinfhd.png",
       "path": "/countries/thailand/amarinfhd.png",
+      "country": "thailand"
+    },
+    {
+      "name": "foxp-thai.png",
+      "path": "/countries/thailand/foxp-thai.png",
       "country": "thailand"
     },
     {
@@ -19703,13 +19898,38 @@
       "country": "thailand"
     },
     {
+      "name": "play.png",
+      "path": "/countries/thailand/play.png",
+      "country": "thailand"
+    },
+    {
       "name": "ThaiPBS3.png",
       "path": "/countries/thailand/ThaiPBS3.png",
       "country": "thailand"
     },
     {
+      "name": "boomerang.png",
+      "path": "/countries/thailand/boomerang.png",
+      "country": "thailand"
+    },
+    {
+      "name": "paramount.png",
+      "path": "/countries/thailand/paramount.png",
+      "country": "thailand"
+    },
+    {
       "name": "thairath.png",
       "path": "/countries/thailand/thairath.png",
+      "country": "thailand"
+    },
+    {
+      "name": "cartoonmovie.png",
+      "path": "/countries/thailand/cartoonmovie.png",
+      "country": "thailand"
+    },
+    {
+      "name": "foxfamily.png",
+      "path": "/countries/thailand/foxfamily.png",
       "country": "thailand"
     },
     {
@@ -19728,6 +19948,11 @@
       "country": "thailand"
     },
     {
+      "name": "Movie5.png",
+      "path": "/countries/thailand/Movie5.png",
+      "country": "thailand"
+    },
+    {
       "name": "iptvth.png",
       "path": "/countries/thailand/iptvth.png",
       "country": "thailand"
@@ -19738,8 +19963,38 @@
       "country": "thailand"
     },
     {
+      "name": "toonee.png",
+      "path": "/countries/thailand/toonee.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hbohits.png",
+      "path": "/countries/thailand/hbohits.png",
+      "country": "thailand"
+    },
+    {
+      "name": "jump.png",
+      "path": "/countries/thailand/jump.png",
+      "country": "thailand"
+    },
+    {
+      "name": "truethaifilm.png",
+      "path": "/countries/thailand/truethaifilm.png",
+      "country": "thailand"
+    },
+    {
       "name": "Logo_Mono_Plus_2019.png",
       "path": "/countries/thailand/Logo_Mono_Plus_2019.png",
+      "country": "thailand"
+    },
+    {
+      "name": "foxcrime.png",
+      "path": "/countries/thailand/foxcrime.png",
+      "country": "thailand"
+    },
+    {
+      "name": "nickjr.png",
+      "path": "/countries/thailand/nickjr.png",
       "country": "thailand"
     },
     {
@@ -19748,8 +20003,23 @@
       "country": "thailand"
     },
     {
+      "name": "cartoonclub.png",
+      "path": "/countries/thailand/cartoonclub.png",
+      "country": "thailand"
+    },
+    {
       "name": "Ch-7-HD-Logo-crop.png",
       "path": "/countries/thailand/Ch-7-HD-Logo-crop.png",
+      "country": "thailand"
+    },
+    {
+      "name": "fxhd.png",
+      "path": "/countries/thailand/fxhd.png",
+      "country": "thailand"
+    },
+    {
+      "name": "mchannel.png",
+      "path": "/countries/thailand/mchannel.png",
       "country": "thailand"
     },
     {
@@ -19763,8 +20033,18 @@
       "country": "thailand"
     },
     {
+      "name": "tvb.png",
+      "path": "/countries/thailand/tvb.png",
+      "country": "thailand"
+    },
+    {
       "name": "120px-ALTV_Logo.png",
       "path": "/countries/thailand/120px-ALTV_Logo.png",
+      "country": "thailand"
+    },
+    {
+      "name": "truefilmhd.png",
+      "path": "/countries/thailand/truefilmhd.png",
       "country": "thailand"
     },
     {
@@ -19813,8 +20093,18 @@
       "country": "thailand"
     },
     {
+      "name": "trueasian.png",
+      "path": "/countries/thailand/trueasian.png",
+      "country": "thailand"
+    },
+    {
       "name": "Ch3HDLogo.png",
       "path": "/countries/thailand/Ch3HDLogo.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sonygem.png",
+      "path": "/countries/thailand/sonygem.png",
       "country": "thailand"
     },
     {
