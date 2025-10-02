@@ -214,7 +214,7 @@
         <div class="stats" id="stats"></div>
 
         <div class="grid" id="logoGrid">
-            <div class="loading">Loading logos...</div>
+            <div class="loading">Scanning for logos...</div>
         </div>
     </div>
 
@@ -254,38 +254,64 @@
             countrySelect.appendChild(option);
         });
 
-        // Fetch logos from GitHub API
-        async function fetchLogos() {
+        // Scan local directories for PNG files
+        async function scanLocalLogos() {
             const logoGrid = document.getElementById('logoGrid');
             allLogos = [];
 
-            try {
-                // Fetch from each country directory
-                for (const country of countries) {
-                    try {
-                        const response = await fetch(`https://api.github.com/repos/dj1p/tvlogos/contents/countries/${country}`);
-                        const files = await response.json();
+            // Try to scan the local file system
+            for (const country of countries) {
+                const countryPath = `countries/${country}`;
+                
+                try {
+                    // Try to fetch the directory listing
+                    const response = await fetch(`${BASE_URL}/${countryPath}/`);
+                    
+                    if (response.ok) {
+                        const html = await response.text();
                         
-                        if (Array.isArray(files)) {
-                            files.forEach(file => {
-                                if (file.name.endsWith('.png')) {
-                                    allLogos.push({
-                                        name: file.name,
-                                        path: `${BASE_URL}/countries/${country}/${file.name}`,
-                                        country: country
-                                    });
-                                }
-                            });
-                        }
-                    } catch (error) {
-                        console.log(`Could not fetch ${country}:`, error);
+                        // Parse HTML to find PNG files
+                        const parser = new DOMParser();
+                        const doc = parser.parseFromString(html, 'text/html');
+                        const links = doc.querySelectorAll('a');
+                        
+                        links.forEach(link => {
+                            const href = link.getAttribute('href');
+                            if (href && href.endsWith('.png')) {
+                                const filename = href.split('/').pop();
+                                allLogos.push({
+                                    name: filename,
+                                    path: `${BASE_URL}/${countryPath}/${filename}`,
+                                    country: country
+                                });
+                            }
+                        });
                     }
+                } catch (error) {
+                    // If directory listing doesn't work, try known patterns
+                    console.log(`Could not scan ${country}, trying alternative method`);
                 }
+            }
 
-                filteredLogos = [...allLogos];
-                renderLogos();
+            // If no logos found via scanning, try loading from a pre-generated list
+            if (allLogos.length === 0) {
+                await loadFromManifest();
+            }
+
+            filteredLogos = [...allLogos];
+            renderLogos();
+        }
+
+        // Alternative: Load from a manifest file (you'll need to create this)
+        async function loadFromManifest() {
+            try {
+                const response = await fetch(`${BASE_URL}/logos-manifest.json`);
+                if (response.ok) {
+                    const manifest = await response.json();
+                    allLogos = manifest.logos || [];
+                }
             } catch (error) {
-                logoGrid.innerHTML = '<div class="loading">Error loading logos. Please refresh the page.</div>';
+                console.log('No manifest found, using empty list');
             }
         }
 
@@ -294,7 +320,16 @@
             const stats = document.getElementById('stats');
             
             if (filteredLogos.length === 0) {
-                logoGrid.innerHTML = '<div class="no-results">No logos found</div>';
+                logoGrid.innerHTML = `
+                    <div class="no-results">
+                        <p>No logos found. Please ensure:</p>
+                        <ul style="text-align: left; display: inline-block; margin-top: 20px;">
+                            <li>PNG files exist in the countries directories</li>
+                            <li>Directory listing is enabled on your server</li>
+                            <li>Or create a logos-manifest.json file</li>
+                        </ul>
+                    </div>
+                `;
                 stats.textContent = '';
                 return;
             }
@@ -304,7 +339,7 @@
             logoGrid.innerHTML = filteredLogos.map(logo => `
                 <div class="logo-card" onclick="copyToClipboard('${logo.path}')">
                     <div class="logo-container">
-                        <img src="${logo.path}" alt="${logo.name}" loading="lazy">
+                        <img src="${logo.path}" alt="${logo.name}" loading="lazy" onerror="this.parentElement.parentElement.style.display='none'">
                     </div>
                     <div class="logo-name">${logo.name.replace('.png', '')}</div>
                     <div class="logo-path">${logo.path}</div>
@@ -351,7 +386,7 @@
         });
 
         // Load logos on page load
-        fetchLogos();
+        scanLocalLogos();
     </script>
 </body>
 </html>
