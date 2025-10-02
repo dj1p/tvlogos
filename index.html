@@ -182,6 +182,15 @@
             color: #a0a0a0;
         }
 
+        .error-message {
+            background: rgba(255, 100, 100, 0.1);
+            border: 2px solid rgba(255, 100, 100, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            color: #ffaaaa;
+        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 1.8em;
@@ -214,7 +223,7 @@
         <div class="stats" id="stats"></div>
 
         <div class="grid" id="logoGrid">
-            <div class="loading">Scanning for logos...</div>
+            <div class="loading">Loading logos manifest...</div>
         </div>
     </div>
 
@@ -227,92 +236,55 @@
         let allLogos = [];
         let filteredLogos = [];
 
-        // Country directory structure based on your repo
-        const countries = [
-            'albania', 'argentina', 'australia', 'austria', 'azerbaijan', 
-            'belgium', 'brazil', 'bulgaria', 'canada', 'caribbean', 
-            'chile', 'costa-rica', 'croatia', 'czech-republic', 
-            'nordic/denmark', 'nordic/finland', 'france', 'germany', 'greece', 
-            'hong-kong', 'hungary', 'nordic/iceland', 'india', 'indonesia', 
-            'international', 'israel', 'italy', 'lebanon', 'lithuania', 
-            'luxembourg', 'malaysia', 'malta', 'mexico', 'netherlands', 
-            'new-zealand', 'nordic', 'nordic/norway', 'philippines', 
-            'poland', 'portugal', 'romania', 'russia', 'serbia', 
-            'singapore', 'slovakia', 'slovenia', 'south-africa', 'spain', 
-            'nordic/sweden', 'switzerland', 'thailand', 'turkey', 'ukraine', 
-            'united-arab-emirates', 'united-kingdom', 'united-states',
-            'world-africa', 'world-asia', 'world-europe', 
-            'world-latin-america', 'world-middle-east'
-        ];
-
-        // Populate country dropdown
-        const countrySelect = document.getElementById('countrySelect');
-        countries.forEach(country => {
-            const option = document.createElement('option');
-            option.value = country;
-            option.textContent = country.split('/').pop().replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-            countrySelect.appendChild(option);
-        });
-
-        // Scan local directories for PNG files
-        async function scanLocalLogos() {
+        // Load logos from manifest
+        async function loadLogos() {
             const logoGrid = document.getElementById('logoGrid');
-            allLogos = [];
-
-            // Try to scan the local file system
-            for (const country of countries) {
-                const countryPath = `countries/${country}`;
-                
-                try {
-                    // Try to fetch the directory listing
-                    const response = await fetch(`${BASE_URL}/${countryPath}/`);
-                    
-                    if (response.ok) {
-                        const html = await response.text();
-                        
-                        // Parse HTML to find PNG files
-                        const parser = new DOMParser();
-                        const doc = parser.parseFromString(html, 'text/html');
-                        const links = doc.querySelectorAll('a');
-                        
-                        links.forEach(link => {
-                            const href = link.getAttribute('href');
-                            if (href && href.endsWith('.png')) {
-                                const filename = href.split('/').pop();
-                                allLogos.push({
-                                    name: filename,
-                                    path: `${BASE_URL}/${countryPath}/${filename}`,
-                                    country: country
-                                });
-                            }
-                        });
-                    }
-                } catch (error) {
-                    // If directory listing doesn't work, try known patterns
-                    console.log(`Could not scan ${country}, trying alternative method`);
-                }
-            }
-
-            // If no logos found via scanning, try loading from a pre-generated list
-            if (allLogos.length === 0) {
-                await loadFromManifest();
-            }
-
-            filteredLogos = [...allLogos];
-            renderLogos();
-        }
-
-        // Alternative: Load from a manifest file (you'll need to create this)
-        async function loadFromManifest() {
+            
             try {
                 const response = await fetch(`${BASE_URL}/logos-manifest.json`);
-                if (response.ok) {
-                    const manifest = await response.json();
-                    allLogos = manifest.logos || [];
+                
+                if (!response.ok) {
+                    throw new Error('Manifest not found');
                 }
+                
+                const data = await response.json();
+                allLogos = data.logos || [];
+                
+                // Populate country dropdown with unique countries
+                populateCountryDropdown();
+                
+                filteredLogos = [...allLogos];
+                renderLogos();
+                
             } catch (error) {
-                console.log('No manifest found, using empty list');
+                console.error('Error loading manifest:', error);
+                logoGrid.innerHTML = `
+                    <div class="error-message">
+                        <h3>⚠️ Manifest File Not Found</h3>
+                        <p>Please run the following commands in your repository:</p>
+                        <pre style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 5px; margin-top: 10px; text-align: left;">
+python3 generate_manifest.py
+git add logos-manifest.json
+git commit -m "Add logos manifest"
+git push origin main</pre>
+                    </div>
+                `;
             }
+        }
+
+        function populateCountryDropdown() {
+            const countrySelect = document.getElementById('countrySelect');
+            
+            // Get unique countries from logos
+            const uniqueCountries = [...new Set(allLogos.map(logo => logo.country))].sort();
+            
+            uniqueCountries.forEach(country => {
+                const option = document.createElement('option');
+                option.value = country;
+                const displayName = country.split('/').pop().replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                option.textContent = displayName;
+                countrySelect.appendChild(option);
+            });
         }
 
         function renderLogos() {
@@ -320,31 +292,25 @@
             const stats = document.getElementById('stats');
             
             if (filteredLogos.length === 0) {
-                logoGrid.innerHTML = `
-                    <div class="no-results">
-                        <p>No logos found. Please ensure:</p>
-                        <ul style="text-align: left; display: inline-block; margin-top: 20px;">
-                            <li>PNG files exist in the countries directories</li>
-                            <li>Directory listing is enabled on your server</li>
-                            <li>Or create a logos-manifest.json file</li>
-                        </ul>
-                    </div>
-                `;
+                logoGrid.innerHTML = '<div class="no-results">No logos found matching your search</div>';
                 stats.textContent = '';
                 return;
             }
 
             stats.textContent = `Showing ${filteredLogos.length} logo${filteredLogos.length !== 1 ? 's' : ''}`;
 
-            logoGrid.innerHTML = filteredLogos.map(logo => `
-                <div class="logo-card" onclick="copyToClipboard('${logo.path}')">
-                    <div class="logo-container">
-                        <img src="${logo.path}" alt="${logo.name}" loading="lazy" onerror="this.parentElement.parentElement.style.display='none'">
+            logoGrid.innerHTML = filteredLogos.map(logo => {
+                const fullPath = logo.path.startsWith('http') ? logo.path : `${BASE_URL}${logo.path}`;
+                return `
+                    <div class="logo-card" onclick="copyToClipboard('${fullPath}')">
+                        <div class="logo-container">
+                            <img src="${fullPath}" alt="${logo.name}" loading="lazy" onerror="this.parentElement.parentElement.style.display='none'">
+                        </div>
+                        <div class="logo-name">${logo.name.replace('.png', '')}</div>
+                        <div class="logo-path">${fullPath}</div>
                     </div>
-                    <div class="logo-name">${logo.name.replace('.png', '')}</div>
-                    <div class="logo-path">${logo.path}</div>
-                </div>
-            `).join('');
+                `;
+            }).join('');
         }
 
         function copyToClipboard(text) {
@@ -359,7 +325,16 @@
 
         // Search functionality
         document.getElementById('searchBox').addEventListener('input', (e) => {
-            const searchTerm = e.target.value.toLowerCase();
+            filterLogos();
+        });
+
+        // Country filter
+        document.getElementById('countrySelect').addEventListener('change', (e) => {
+            filterLogos();
+        });
+
+        function filterLogos() {
+            const searchTerm = document.getElementById('searchBox').value.toLowerCase();
             const selectedCountry = document.getElementById('countrySelect').value;
             
             filteredLogos = allLogos.filter(logo => {
@@ -369,24 +344,10 @@
             });
             
             renderLogos();
-        });
-
-        // Country filter
-        document.getElementById('countrySelect').addEventListener('change', (e) => {
-            const selectedCountry = e.target.value;
-            const searchTerm = document.getElementById('searchBox').value.toLowerCase();
-            
-            filteredLogos = allLogos.filter(logo => {
-                const matchesSearch = !searchTerm || logo.name.toLowerCase().includes(searchTerm);
-                const matchesCountry = !selectedCountry || logo.country === selectedCountry;
-                return matchesSearch && matchesCountry;
-            });
-            
-            renderLogos();
-        });
+        }
 
         // Load logos on page load
-        scanLocalLogos();
+        loadLogos();
     </script>
 </body>
 </html>
