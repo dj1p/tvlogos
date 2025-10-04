@@ -488,25 +488,36 @@
         let allLogos = [];
 
         async function loadLogos() {
+            console.log('loadLogos function called');
             try {
+                console.log('Fetching manifest...');
                 const response = await fetch('/logos-manifest.json');
+                console.log('Fetch complete, status:', response.status);
                 
                 if (!response.ok) {
                     throw new Error('Manifest not found');
                 }
                 
+                console.log('Parsing JSON...');
                 const data = await response.json();
+                console.log('JSON parsed, total:', data.total);
+                
                 allLogos = data.logos || [];
+                console.log('Logos assigned, length:', allLogos.length);
                 
                 if (allLogos.length === 0) {
                     throw new Error('No logos in manifest');
                 }
                 
+                console.log('Populating country filter...');
                 populateCountryFilter();
+                console.log('Displaying logos...');
                 displayLogos(allLogos);
+                console.log('Updating stats...');
                 updateStats();
+                console.log('loadLogos complete!');
             } catch (error) {
-                console.error('Error loading logos:', error);
+                console.error('ERROR in loadLogos:', error);
                 document.getElementById('logosGrid').innerHTML = `
                     <div class="loading">
                         <h3 style="color: #667eea; margin-bottom: 15px;">Error Loading Logos</h3>
@@ -549,14 +560,23 @@
                 `;
             }).join('');
 
-            // Attach event listeners
-            document.querySelectorAll('.logo-card').forEach(card => {
-                card.addEventListener('click', function() {
-                    const url = this.getAttribute('data-url');
-                    const button = this.querySelector('.copy-button');
-                    copyToClipboard(url, button);
+            // Attach event listeners IMMEDIATELY after inserting HTML
+            setTimeout(function() {
+                console.log('Attaching event listeners...');
+                const cards = document.querySelectorAll('.logo-card');
+                console.log('Found ' + cards.length + ' cards to attach listeners to');
+                
+                cards.forEach(function(card) {
+                    card.addEventListener('click', function(event) {
+                        console.log('CARD CLICKED!');
+                        const url = this.getAttribute('data-url');
+                        const button = this.querySelector('.copy-button');
+                        copyToClipboard(url, button);
+                    });
                 });
-            });
+                
+                console.log('Event listeners attached!');
+            }, 100);
         }
 
         function filterLogos() {
