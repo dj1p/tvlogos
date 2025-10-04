@@ -549,28 +549,47 @@
         }
 
         function displayLogos(logos) {
+            console.log('displayLogos called with', logos.length, 'logos');
             const grid = document.getElementById('logosGrid');
+            console.log('Grid element:', grid);
             
             if (logos.length === 0) {
                 grid.innerHTML = '<div class="loading">No logos found</div>';
                 return;
             }
 
-            grid.innerHTML = logos.map((logo, index) => `
-                <div class="logo-card" onclick="copyLogoUrl('${window.location.origin}${logo.path}', ${index})" id="card-${index}">
+            const html = logos.map((logo, index) => {
+                const fullUrl = window.location.origin + logo.path;
+                return `
+                <div class="logo-card" onclick="copyLogoUrl('${fullUrl}', ${index})" id="card-${index}">
                     <img src="${logo.path}" 
                          alt="${logo.name}" 
                          onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22><text x=%2250%%22 y=%2250%%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23666%22>No Image</text></svg>'">
                     <div class="logo-name">${logo.name}</div>
-                    <button class="copy-button" onclick="event.stopPropagation(); copyLogoUrl('${window.location.origin}${logo.path}', ${index})">
+                    <button class="copy-button" onclick="event.stopPropagation(); copyLogoUrl('${fullUrl}', ${index})">
                         Copy URL
                     </button>
                 </div>
-            `).join('');
+            `;
+            }).join('');
+            
+            console.log('Generated HTML length:', html.length);
+            console.log('First card HTML:', html.substring(0, 300));
+            grid.innerHTML = html;
+            console.log('HTML inserted into grid');
+            
+            // Test if click handler works
+            const firstCard = document.getElementById('card-0');
+            console.log('First card element:', firstCard);
+            if (firstCard) {
+                console.log('First card onclick:', firstCard.onclick);
+            }
         }
 
         function copyLogoUrl(url, index) {
-            copyToClipboard(url, document.querySelector(`#card-${index} .copy-button`));
+            console.log('copyLogoUrl called!', url, index);
+            const button = document.querySelector(`#card-${index} .copy-button`);
+            copyToClipboard(url, button);
         }
 
         function filterLogos() {
