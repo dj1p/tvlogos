@@ -1,20 +1,4 @@
-function displayLogos(logos) {
-            console.log('displayLogos called with', logos.length, 'logos');
-            const grid = document.getElementById('logosGrid');
-            console.log('Grid element:', grid);
-            
-            if (logos.length === 0) {
-                grid.innerHTML = '<div class="loading">No logos found</div>';
-                return;
-            }
-
-            const html = logos.map((logo, index) => {
-                const fullUrl = window.location.origin + logo.path;
-                return `
-                <div class="logo-card" data-url="${fullUrl}" data-index="${index}" id="card-${index}">
-                    <img src="${logo.path}" 
-                         alt="${logo.name}" 
-                         onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -268,7 +252,6 @@ function displayLogos(logos) {
             cursor: pointer;
             border: 2px solid transparent;
             backdrop-filter: blur(10px);
-            position: relative;
         }
 
         .logo-card:hover {
@@ -505,27 +488,15 @@ function displayLogos(logos) {
         let allLogos = [];
 
         async function loadLogos() {
-            console.log('Starting to load logos...');
             try {
-                // Try to load the manifest file
                 const response = await fetch('/logos-manifest.json');
-                console.log('Fetch response status:', response.status);
                 
                 if (!response.ok) {
-                    throw new Error('Manifest not found - status: ' + response.status);
+                    throw new Error('Manifest not found');
                 }
                 
-                const text = await response.text();
-                console.log('Raw response length:', text.length);
-                console.log('First 100 chars:', text.substring(0, 100));
-                
-                const data = JSON.parse(text);
-                console.log('Parsed data successfully');
-                console.log('Total in manifest:', data.total);
-                
+                const data = await response.json();
                 allLogos = data.logos || [];
-                console.log('Total logos loaded:', allLogos.length);
-                console.log('First logo:', allLogos[0]);
                 
                 if (allLogos.length === 0) {
                     throw new Error('No logos in manifest');
@@ -534,19 +505,12 @@ function displayLogos(logos) {
                 populateCountryFilter();
                 displayLogos(allLogos);
                 updateStats();
-                console.log('Display complete!');
             } catch (error) {
-                console.error('ERROR loading logos:', error);
-                console.error('Error stack:', error.stack);
-                
-                // Show helpful error message
+                console.error('Error loading logos:', error);
                 document.getElementById('logosGrid').innerHTML = `
                     <div class="loading">
                         <h3 style="color: #667eea; margin-bottom: 15px;">Error Loading Logos</h3>
-                        <p style="color: #aaa; line-height: 1.6;">
-                            <strong>Error:</strong> ${error.message}<br><br>
-                            Check the browser console (F12) for details.
-                        </p>
+                        <p style="color: #aaa;">Please check the console for details.</p>
                     </div>
                 `;
             }
@@ -565,47 +529,34 @@ function displayLogos(logos) {
         }
 
         function displayLogos(logos) {
-            console.log('displayLogos called with', logos.length, 'logos');
             const grid = document.getElementById('logosGrid');
-            console.log('Grid element:', grid);
             
             if (logos.length === 0) {
                 grid.innerHTML = '<div class="loading">No logos found</div>';
                 return;
             }
 
-            const html = logos.map((logo, index) => {
+            grid.innerHTML = logos.map((logo, index) => {
                 const fullUrl = window.location.origin + logo.path;
                 return `
-                <div class="logo-card" onclick="copyLogoUrl('${fullUrl}', ${index})" id="card-${index}">
-                    <img src="${logo.path}" 
-                         alt="${logo.name}" 
-                         onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22><text x=%2250%%22 y=%2250%%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23666%22>No Image</text></svg>'">
-                    <div class="logo-name">${logo.name}</div>
-                    <button class="copy-button" onclick="event.stopPropagation(); copyLogoUrl('${fullUrl}', ${index})">
-                        Copy URL
-                    </button>
-                </div>
-            `;
+                    <div class="logo-card" data-url="${fullUrl}" data-index="${index}">
+                        <img src="${logo.path}" 
+                             alt="${logo.name}" 
+                             onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23666%22%3ENo Image%3C/text%3E%3C/svg%3E'">
+                        <div class="logo-name">${logo.name}</div>
+                        <button class="copy-button">Copy URL</button>
+                    </div>
+                `;
             }).join('');
-            
-            console.log('Generated HTML length:', html.length);
-            console.log('First card HTML:', html.substring(0, 300));
-            grid.innerHTML = html;
-            console.log('HTML inserted into grid');
-            
-            // Test if click handler works
-            const firstCard = document.getElementById('card-0');
-            console.log('First card element:', firstCard);
-            if (firstCard) {
-                console.log('First card onclick:', firstCard.onclick);
-            }
-        }
 
-        function copyLogoUrl(url, index) {
-            console.log('copyLogoUrl called!', url, index);
-            const button = document.querySelector(`#card-${index} .copy-button`);
-            copyToClipboard(url, button);
+            // Attach event listeners
+            document.querySelectorAll('.logo-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    const url = this.getAttribute('data-url');
+                    const button = this.querySelector('.copy-button');
+                    copyToClipboard(url, button);
+                });
+            });
         }
 
         function filterLogos() {
@@ -632,7 +583,6 @@ function displayLogos(logos) {
             navigator.clipboard.writeText(text).then(() => {
                 button.textContent = 'Copied!';
                 button.classList.add('copied');
-                
                 showNotification();
                 
                 setTimeout(() => {
@@ -687,6 +637,7 @@ To implement real uploads, you need:
             countrySelect.value = '';
         }
 
+        // Load logos when page loads
         loadLogos();
     </script>
 </body>
