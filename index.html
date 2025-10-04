@@ -489,22 +489,27 @@
         let allLogos = [];
 
         async function loadLogos() {
+            console.log('Starting to load logos...');
             try {
                 // Try to load the manifest file
                 const response = await fetch('/logos-manifest.json');
+                console.log('Fetch response status:', response.status);
                 
                 if (!response.ok) {
                     throw new Error('Manifest not found - status: ' + response.status);
                 }
                 
                 const text = await response.text();
-                console.log('Raw response:', text.substring(0, 200));
+                console.log('Raw response length:', text.length);
+                console.log('First 100 chars:', text.substring(0, 100));
                 
                 const data = JSON.parse(text);
-                console.log('Parsed data:', data);
+                console.log('Parsed data successfully');
+                console.log('Total in manifest:', data.total);
                 
                 allLogos = data.logos || [];
                 console.log('Total logos loaded:', allLogos.length);
+                console.log('First logo:', allLogos[0]);
                 
                 if (allLogos.length === 0) {
                     throw new Error('No logos in manifest');
@@ -513,9 +518,10 @@
                 populateCountryFilter();
                 displayLogos(allLogos);
                 updateStats();
+                console.log('Display complete!');
             } catch (error) {
-                console.error('Error loading logos:', error);
-                console.error('Error details:', error.message);
+                console.error('ERROR loading logos:', error);
+                console.error('Error stack:', error.stack);
                 
                 // Show helpful error message
                 document.getElementById('logosGrid').innerHTML = `
@@ -523,8 +529,7 @@
                         <h3 style="color: #667eea; margin-bottom: 15px;">Error Loading Logos</h3>
                         <p style="color: #aaa; line-height: 1.6;">
                             <strong>Error:</strong> ${error.message}<br><br>
-                            Please check the browser console (F12) for more details.<br>
-                            The manifest file exists but there may be a loading issue.
+                            Check the browser console (F12) for details.
                         </p>
                     </div>
                 `;
@@ -551,17 +556,21 @@
                 return;
             }
 
-            grid.innerHTML = logos.map(logo => `
-                <div class="logo-card">
+            grid.innerHTML = logos.map((logo, index) => `
+                <div class="logo-card" onclick="copyLogoUrl('${window.location.origin}${logo.path}', ${index})" id="card-${index}">
                     <img src="${logo.path}" 
                          alt="${logo.name}" 
                          onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22><text x=%2250%%22 y=%2250%%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23666%22>No Image</text></svg>'">
                     <div class="logo-name">${logo.name}</div>
-                    <button class="copy-button" onclick="copyToClipboard('${window.location.origin}${logo.path}', this)">
+                    <button class="copy-button" onclick="event.stopPropagation(); copyLogoUrl('${window.location.origin}${logo.path}', ${index})">
                         Copy URL
                     </button>
                 </div>
             `).join('');
+        }
+
+        function copyLogoUrl(url, index) {
+            copyToClipboard(url, document.querySelector(`#card-${index} .copy-button`));
         }
 
         function filterLogos() {
