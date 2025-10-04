@@ -638,7 +638,10 @@ To implement real uploads, you need:
         }
 
         // Load logos when page loads
-        loadLogos();
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded, starting...');
+            loadLogos();
+        });
     </script>
 </body>
 </html>
