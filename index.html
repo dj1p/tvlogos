@@ -1,4 +1,20 @@
-<!DOCTYPE html>
+function displayLogos(logos) {
+            console.log('displayLogos called with', logos.length, 'logos');
+            const grid = document.getElementById('logosGrid');
+            console.log('Grid element:', grid);
+            
+            if (logos.length === 0) {
+                grid.innerHTML = '<div class="loading">No logos found</div>';
+                return;
+            }
+
+            const html = logos.map((logo, index) => {
+                const fullUrl = window.location.origin + logo.path;
+                return `
+                <div class="logo-card" data-url="${fullUrl}" data-index="${index}" id="card-${index}">
+                    <img src="${logo.path}" 
+                         alt="${logo.name}" 
+                         onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
