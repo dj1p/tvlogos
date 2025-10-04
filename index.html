@@ -489,17 +489,40 @@
 
         async function loadLogos() {
             try {
+                // Try to load the manifest file
                 const response = await fetch('/logos-manifest.json');
+                
+                if (!response.ok) {
+                    throw new Error('Manifest not found');
+                }
+                
                 const data = await response.json();
                 allLogos = data.logos || [];
+                
+                if (allLogos.length === 0) {
+                    throw new Error('No logos in manifest');
+                }
                 
                 populateCountryFilter();
                 displayLogos(allLogos);
                 updateStats();
             } catch (error) {
                 console.error('Error loading logos:', error);
-                document.getElementById('logosGrid').innerHTML = 
-                    '<div class="loading">Error loading logos. Please check console.</div>';
+                
+                // Show helpful error message
+                document.getElementById('logosGrid').innerHTML = `
+                    <div class="loading">
+                        <h3 style="color: #667eea; margin-bottom: 15px;">Logos Manifest Not Found</h3>
+                        <p style="color: #aaa; line-height: 1.6;">
+                            To display logos, you need to generate the <strong>logos-manifest.json</strong> file.<br><br>
+                            <strong>Steps to fix:</strong><br>
+                            1. Make sure your logo files are in the <code>/countries/</code> folder<br>
+                            2. Run the Python script to generate the manifest<br>
+                            3. Push changes to GitHub and redeploy<br><br>
+                            See the admin panel above for upload instructions.
+                        </p>
+                    </div>
+                `;
             }
         }
 
