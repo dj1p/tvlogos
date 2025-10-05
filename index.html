@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TV Logos Browser</title>
+    <title>TV Logos Browser - Free High-Quality TV Channel Logos for IPTV & Streaming</title>
+    <meta name="description" content="Browse and download 9900+ high-quality TV channel logos from around the world. Free logos for IPTV apps, media centers, and streaming platforms. Instant access with direct URLs.">
+    <meta name="keywords" content="tv logos, channel logos, iptv logos, streaming logos, tv channel images, free tv logos, media center logos, plex logos">
+    <meta property="og:title" content="TV Logos Browser - Free TV Channel Logos">
+    <meta property="og:description" content="Browse 9900+ high-quality TV channel logos. Free for IPTV apps and streaming platforms.">
+    <meta property="og:url" content="https://tvlogos.austheim.app">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://tvlogos.austheim.app">
+    
+    <!-- Google AdSense - Replace with your own publisher ID -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXXX"
+         crossorigin="anonymous"></script>
     <style>
         * {
             margin: 0;
@@ -27,10 +38,23 @@
         header {
             text-align: center;
             margin-bottom: 40px;
-            padding: 30px;
+            padding: 40px;
             background: rgba(255, 255, 255, 0.05);
             border-radius: 15px;
             backdrop-filter: blur(10px);
+            position: relative;
+        }
+
+        .hero-section {
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .hero-text {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #b8b8b8;
+            margin-bottom: 25px;
         }
 
         h1 {
@@ -43,8 +67,113 @@
         }
 
         .subtitle {
-            color: #a0a0a0;
+            color: #aaa;
             font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .donate-button {
+            display: inline-block;
+            background: #0070ba;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+        }
+
+        .donate-button:hover {
+            background: #005ea6;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 112, 186, 0.4);
+        }
+
+        .admin-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(102, 126, 234, 0.2);
+            border: 2px solid #667eea;
+            color: #667eea;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .admin-toggle:hover {
+            background: rgba(102, 126, 234, 0.3);
+        }
+
+        .admin-panel {
+            display: none;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            border: 2px solid #667eea;
+        }
+
+        .admin-panel.active {
+            display: block;
+        }
+
+        .admin-panel h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .upload-form {
+            display: grid;
+            gap: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-group label {
+            color: #aaa;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select {
+            padding: 12px;
+            border-radius: 8px;
+            border: 2px solid rgba(102, 126, 234, 0.3);
+            background: rgba(255, 255, 255, 0.05);
+            color: #e0e0e0;
+            font-size: 1em;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .upload-button {
+            background: #667eea;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .upload-button:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
         }
 
         .controls {
@@ -52,34 +181,36 @@
             gap: 15px;
             margin-bottom: 30px;
             flex-wrap: wrap;
+            justify-content: center;
         }
 
-        .search-box, .country-select {
-            flex: 1;
-            min-width: 200px;
-            padding: 15px 20px;
-            font-size: 16px;
-            border: 2px solid rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
+        .search-box,
+        .country-filter {
+            padding: 12px 20px;
+            border-radius: 25px;
+            border: 2px solid rgba(102, 126, 234, 0.3);
             background: rgba(255, 255, 255, 0.05);
             color: #e0e0e0;
-            transition: all 0.3s ease;
+            font-size: 1em;
+            min-width: 250px;
+            backdrop-filter: blur(10px);
         }
 
-        .search-box:focus, .country-select:focus {
+        .search-box:focus,
+        .country-filter:focus {
             outline: none;
             border-color: #667eea;
-            background: rgba(255, 255, 255, 0.08);
         }
 
-        .country-select option {
-            background: #1a1a2e;
-            color: #e0e0e0;
+        .stats {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #aaa;
         }
 
-        .grid {
+        .logos-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 20px;
             margin-bottom: 40px;
         }
@@ -88,11 +219,11 @@
             background: rgba(255, 255, 255, 0.05);
             border-radius: 12px;
             padding: 20px;
+            text-align: center;
             transition: all 0.3s ease;
             cursor: pointer;
             border: 2px solid transparent;
-            position: relative;
-            overflow: hidden;
+            backdrop-filter: blur(10px);
         }
 
         .logo-card:hover {
@@ -101,107 +232,83 @@
             box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
         }
 
-        .logo-container {
-            width: 100%;
-            height: 150px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(0, 0, 0, 0.3);
-            border-radius: 8px;
-            margin-bottom: 15px;
-            padding: 15px;
-        }
-
-        .logo-container img {
+        .logo-card img {
             max-width: 100%;
-            max-height: 100%;
+            max-height: 120px;
             object-fit: contain;
+            margin-bottom: 15px;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+            pointer-events: none;
         }
 
         .logo-name {
-            font-size: 14px;
+            font-size: 0.9em;
+            color: #aaa;
             word-break: break-word;
-            color: #b0b0b0;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            pointer-events: none;
         }
 
-        .logo-path {
-            font-size: 12px;
-            color: #667eea;
-            font-family: 'Courier New', monospace;
-            word-break: break-all;
-        }
-
-        .copied-notification {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
+        .copy-button {
             background: #667eea;
             color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85em;
+            transition: all 0.3s ease;
+        }
+
+        .copy-button:hover {
+            background: #764ba2;
+        }
+
+        .copy-button.copied {
+            background: #28a745;
+        }
+
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #28a745;
+            color: white;
             padding: 15px 25px;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
-            display: none;
-            animation: slideIn 0.3s ease;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: all 0.3s ease;
             z-index: 1000;
         }
 
-        .copied-notification.show {
-            display: block;
-        }
-
-        @keyframes slideIn {
-            from {
-                transform: translateX(400px);
-                opacity: 0;
-            }
-            to {
-                transform: translateX(0);
-                opacity: 1;
-            }
+        .notification.show {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         .loading {
             text-align: center;
-            padding: 60px;
+            padding: 40px;
             font-size: 1.2em;
-            color: #a0a0a0;
-        }
-
-        .no-results {
-            text-align: center;
-            padding: 60px;
-            font-size: 1.2em;
-            color: #a0a0a0;
-        }
-
-        .stats {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #a0a0a0;
-        }
-
-        .error-message {
-            background: rgba(255, 100, 100, 0.1);
-            border: 2px solid rgba(255, 100, 100, 0.3);
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px 0;
-            color: #ffaaaa;
+            color: #667eea;
         }
 
         @media (max-width: 768px) {
             h1 {
-                font-size: 1.8em;
+                font-size: 2em;
             }
-            
-            .controls {
-                flex-direction: column;
+
+            .logos-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 15px;
             }
-            
-            .grid {
-                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+            .admin-toggle {
+                position: static;
+                display: block;
+                margin: 10px auto 0;
             }
         }
     </style>
@@ -209,145 +316,322 @@
 <body>
     <div class="container">
         <header>
+            <button class="admin-toggle" onclick="toggleAdmin()">+ Add Logo</button>
             <h1>📺 TV Logos Browser</h1>
-            <p class="subtitle">Click any logo to copy its URL</p>
+            <p class="subtitle">Your One-Stop Hub for High-Quality TV Channel Logos</p>
+            
+            <div class="hero-section">
+                <p class="hero-text">
+                    Welcome to the ultimate collection of TV channel logos! Whether you're building an IPTV app, 
+                    creating a media center, or developing a streaming platform, we've got you covered with 
+                    crystal-clear, professionally curated logos from channels around the world.
+                </p>
+                <p class="hero-text">
+                    Browse thousands of logos, search instantly, filter by country, and copy direct URLs with one click. 
+                    All logos are hosted and ready to use in your projects.
+                </p>
+            </div>
+
+            <a href="https://paypal.me/teaustheim" 
+               class="donate-button" 
+               target="_blank">
+                💰 Support This Project
+            </a>
+            
+             Alternative: PayPal Hosted Button (uncomment and add your button ID) 
+            
+            <form action="https://www.paypal.com/donate" method="post" target="_blank" style="display: inline-block; margin-top: 15px;">
+                <input type="hidden" name="business" value="L67GASE23ELRA">
+                <button type="submit" class="donate-button" style="border: none;">
+                    💰 Donate with PayPal
+                </button>
+            </form>
+            
         </header>
 
+        <div class="admin-panel" id="adminPanel">
+            <h2>Add New Logo</h2>
+            <div class="upload-form">
+                <div class="form-group">
+                    <label for="logoFile">Select Logo File (PNG)</label>
+                    <input type="file" id="logoFile" accept=".png" required>
+                </div>
+                <div class="form-group">
+                    <label for="logoName">Logo Name</label>
+                    <input type="text" id="logoName" placeholder="e.g., BBC One" required>
+                </div>
+                <div class="form-group">
+                    <label for="logoCountry">Country/Category</label>
+                    <select id="logoCountry" required>
+                        <option value="">Select country...</option>
+                        <optgroup label="Nordic Countries">
+                            <option value="norway">Norway</option>
+                            <option value="sweden">Sweden</option>
+                            <option value="denmark">Denmark</option>
+                            <option value="finland">Finland</option>
+                            <option value="iceland">Iceland</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                            <option value="uk">United Kingdom</option>
+                            <option value="ireland">Ireland</option>
+                            <option value="germany">Germany</option>
+                            <option value="france">France</option>
+                            <option value="spain">Spain</option>
+                            <option value="italy">Italy</option>
+                            <option value="netherlands">Netherlands</option>
+                            <option value="belgium">Belgium</option>
+                            <option value="poland">Poland</option>
+                            <option value="portugal">Portugal</option>
+                            <option value="greece">Greece</option>
+                            <option value="switzerland">Switzerland</option>
+                            <option value="austria">Austria</option>
+                        </optgroup>
+                        <optgroup label="Americas">
+                            <option value="usa">United States</option>
+                            <option value="canada">Canada</option>
+                            <option value="mexico">Mexico</option>
+                            <option value="brazil">Brazil</option>
+                            <option value="argentina">Argentina</option>
+                        </optgroup>
+                        <optgroup label="Asia Pacific">
+                            <option value="thailand">Thailand</option>
+                            <option value="japan">Japan</option>
+                            <option value="korea">South Korea</option>
+                            <option value="china">China</option>
+                            <option value="india">India</option>
+                            <option value="australia">Australia</option>
+                            <option value="new-zealand">New Zealand</option>
+                            <option value="singapore">Singapore</option>
+                            <option value="malaysia">Malaysia</option>
+                            <option value="indonesia">Indonesia</option>
+                            <option value="philippines">Philippines</option>
+                        </optgroup>
+                        <optgroup label="Middle East & Africa">
+                            <option value="uae">United Arab Emirates</option>
+                            <option value="saudi-arabia">Saudi Arabia</option>
+                            <option value="israel">Israel</option>
+                            <option value="turkey">Turkey</option>
+                            <option value="south-africa">South Africa</option>
+                        </optgroup>
+                        <optgroup label="Categories">
+                            <option value="international">International</option>
+                            <option value="sports">Sports</option>
+                            <option value="news">News</option>
+                            <option value="movies">Movies</option>
+                            <option value="kids">Kids</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <button class="upload-button" onclick="uploadLogo()">Upload Logo</button>
+                <p style="color: #aaa; font-size: 0.9em; margin-top: 10px;">
+                    Note: This is a demo interface. In production, you'd need to implement server-side upload handling.
+                </p>
+            </div>
+        </div>
+
         <div class="controls">
-            <input type="text" class="search-box" id="searchBox" placeholder="Search logos...">
-            <select class="country-select" id="countrySelect">
+            <input type="text" 
+                   class="search-box" 
+                   id="searchBox" 
+                   placeholder="🔍 Search logos..." 
+                   onkeyup="filterLogos()">
+            <select class="country-filter" id="countryFilter" onchange="filterLogos()">
                 <option value="">All Countries</option>
             </select>
         </div>
 
-        <div class="stats" id="stats"></div>
+        <div class="stats" id="stats">Loading logos...</div>
 
-        <div class="grid" id="logoGrid">
-            <div class="loading">Loading logos manifest...</div>
+        <div class="logos-grid" id="logosGrid">
+            <div class="loading">Loading logos...</div>
         </div>
     </div>
 
-    <div class="copied-notification" id="notification">
-        ✓ URL copied to clipboard!
-    </div>
+    <div class="notification" id="notification">URL copied to clipboard!</div>
 
     <script>
-        const BASE_URL = window.location.origin;
         let allLogos = [];
-        let filteredLogos = [];
 
-        // Load logos from manifest
         async function loadLogos() {
-            const logoGrid = document.getElementById('logoGrid');
-            
+            console.log('loadLogos function called');
             try {
-                const response = await fetch(`${BASE_URL}/logos-manifest.json`);
+                console.log('Fetching manifest...');
+                const response = await fetch('/logos-manifest.json');
+                console.log('Fetch complete, status:', response.status);
                 
                 if (!response.ok) {
                     throw new Error('Manifest not found');
                 }
                 
+                console.log('Parsing JSON... (this may take a moment for large files)');
                 const data = await response.json();
+                console.log('JSON parsed successfully! Total:', data.total);
+                
                 allLogos = data.logos || [];
+                console.log('Logos assigned, length:', allLogos.length);
                 
-                // Populate country dropdown with unique countries
-                populateCountryDropdown();
+                if (allLogos.length === 0) {
+                    throw new Error('No logos in manifest');
+                }
                 
-                filteredLogos = [...allLogos];
-                renderLogos();
+                console.log('Populating country filter...');
+                populateCountryFilter();
+                
+                console.log('Starting to display logos...');
+                // Use setTimeout to let the UI breathe
+                setTimeout(function() {
+                    displayLogos(allLogos);
+                    updateStats();
+                    console.log('All done!');
+                }, 50);
                 
             } catch (error) {
-                console.error('Error loading manifest:', error);
-                logoGrid.innerHTML = `
-                    <div class="error-message">
-                        <h3>⚠️ Manifest File Not Found</h3>
-                        <p>Please run the following commands in your repository:</p>
-                        <pre style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 5px; margin-top: 10px; text-align: left;">
-python3 generate_manifest.py
-git add logos-manifest.json
-git commit -m "Add logos manifest"
-git push origin main</pre>
+                console.error('ERROR in loadLogos:', error);
+                console.error('Error stack:', error.stack);
+                document.getElementById('logosGrid').innerHTML = `
+                    <div class="loading">
+                        <h3 style="color: #667eea; margin-bottom: 15px;">Error Loading Logos</h3>
+                        <p style="color: #aaa;">Error: ${error.message}<br>Check console for details.</p>
                     </div>
                 `;
             }
         }
 
-        function populateCountryDropdown() {
-            const countrySelect = document.getElementById('countrySelect');
+        function populateCountryFilter() {
+            const countries = [...new Set(allLogos.map(logo => logo.country))].sort();
+            const filter = document.getElementById('countryFilter');
             
-            // Get unique countries from logos
-            const uniqueCountries = [...new Set(allLogos.map(logo => logo.country))].sort();
-            
-            uniqueCountries.forEach(country => {
+            countries.forEach(country => {
                 const option = document.createElement('option');
                 option.value = country;
-                const displayName = country.split('/').pop().replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-                option.textContent = displayName;
-                countrySelect.appendChild(option);
+                option.textContent = country.charAt(0).toUpperCase() + country.slice(1);
+                filter.appendChild(option);
             });
         }
 
-        function renderLogos() {
-            const logoGrid = document.getElementById('logoGrid');
-            const stats = document.getElementById('stats');
+        function displayLogos(logos) {
+            const grid = document.getElementById('logosGrid');
             
-            if (filteredLogos.length === 0) {
-                logoGrid.innerHTML = '<div class="no-results">No logos found matching your search</div>';
-                stats.textContent = '';
+            if (logos.length === 0) {
+                grid.innerHTML = '<div class="loading">No logos found</div>';
                 return;
             }
 
-            stats.textContent = `Showing ${filteredLogos.length} logo${filteredLogos.length !== 1 ? 's' : ''}`;
-
-            logoGrid.innerHTML = filteredLogos.map(logo => {
-                const fullPath = logo.path.startsWith('http') ? logo.path : `${BASE_URL}${logo.path}`;
+            grid.innerHTML = logos.map((logo, index) => {
+                const fullUrl = window.location.origin + logo.path;
                 return `
-                    <div class="logo-card" onclick="copyToClipboard('${fullPath}')">
-                        <div class="logo-container">
-                            <img src="${fullPath}" alt="${logo.name}" loading="lazy" onerror="this.parentElement.parentElement.style.display='none'">
-                        </div>
-                        <div class="logo-name">${logo.name.replace('.png', '')}</div>
-                        <div class="logo-path">${fullPath}</div>
+                    <div class="logo-card" data-url="${fullUrl}" data-index="${index}">
+                        <img src="${logo.path}" 
+                             alt="${logo.name}" 
+                             onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23666%22%3ENo Image%3C/text%3E%3C/svg%3E'">
+                        <div class="logo-name">${logo.name}</div>
+                        <button class="copy-button">Copy URL</button>
                     </div>
                 `;
             }).join('');
+
+            // Attach event listeners IMMEDIATELY after inserting HTML
+            setTimeout(function() {
+                console.log('Attaching event listeners...');
+                const cards = document.querySelectorAll('.logo-card');
+                console.log('Found ' + cards.length + ' cards to attach listeners to');
+                
+                cards.forEach(function(card) {
+                    card.addEventListener('click', function(event) {
+                        console.log('CARD CLICKED!');
+                        const url = this.getAttribute('data-url');
+                        const button = this.querySelector('.copy-button');
+                        copyToClipboard(url, button);
+                    });
+                });
+                
+                console.log('Event listeners attached!');
+            }, 100);
         }
 
-        function copyToClipboard(text) {
+        function filterLogos() {
+            const searchTerm = document.getElementById('searchBox').value.toLowerCase();
+            const countryFilter = document.getElementById('countryFilter').value;
+
+            const filtered = allLogos.filter(logo => {
+                const matchesSearch = logo.name.toLowerCase().includes(searchTerm);
+                const matchesCountry = !countryFilter || logo.country === countryFilter;
+                return matchesSearch && matchesCountry;
+            });
+
+            displayLogos(filtered);
+            updateStats(filtered.length);
+        }
+
+        function updateStats(count = null) {
+            const total = count !== null ? count : allLogos.length;
+            document.getElementById('stats').textContent = 
+                `Showing ${total} logo${total !== 1 ? 's' : ''}`;
+        }
+
+        function copyToClipboard(text, button) {
             navigator.clipboard.writeText(text).then(() => {
-                const notification = document.getElementById('notification');
-                notification.classList.add('show');
+                button.textContent = 'Copied!';
+                button.classList.add('copied');
+                showNotification();
+                
                 setTimeout(() => {
-                    notification.classList.remove('show');
+                    button.textContent = 'Copy URL';
+                    button.classList.remove('copied');
                 }, 2000);
             });
         }
 
-        // Search functionality
-        document.getElementById('searchBox').addEventListener('input', (e) => {
-            filterLogos();
-        });
-
-        // Country filter
-        document.getElementById('countrySelect').addEventListener('change', (e) => {
-            filterLogos();
-        });
-
-        function filterLogos() {
-            const searchTerm = document.getElementById('searchBox').value.toLowerCase();
-            const selectedCountry = document.getElementById('countrySelect').value;
-            
-            filteredLogos = allLogos.filter(logo => {
-                const matchesSearch = logo.name.toLowerCase().includes(searchTerm);
-                const matchesCountry = !selectedCountry || logo.country === selectedCountry;
-                return matchesSearch && matchesCountry;
-            });
-            
-            renderLogos();
+        function showNotification() {
+            const notification = document.getElementById('notification');
+            notification.classList.add('show');
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 3000);
         }
 
-        // Load logos on page load
-        loadLogos();
+        function toggleAdmin() {
+            const panel = document.getElementById('adminPanel');
+            panel.classList.toggle('active');
+        }
+
+        function uploadLogo() {
+            const fileInput = document.getElementById('logoFile');
+            const nameInput = document.getElementById('logoName');
+            const countrySelect = document.getElementById('logoCountry');
+
+            if (!fileInput.files[0] || !nameInput.value || !countrySelect.value) {
+                alert('Please fill in all fields');
+                return;
+            }
+
+            const file = fileInput.files[0];
+            const fileName = nameInput.value.trim().replace(/\s+/g, '-') + '.png';
+            const country = countrySelect.value;
+
+            alert(`Demo Mode: In production, this would upload:
+            
+File: ${file.name}
+Save as: ${fileName}
+Country: ${country}
+Path: /countries/${country}/${fileName}
+
+To implement real uploads, you need:
+1. Server-side endpoint to handle file uploads
+2. Authentication/authorization
+3. File validation and storage
+4. Manifest regeneration after upload`);
+
+            fileInput.value = '';
+            nameInput.value = '';
+            countrySelect.value = '';
+        }
+
+        // Load logos when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded, starting...');
+            loadLogos();
+        });
     </script>
 </body>
 </html>
