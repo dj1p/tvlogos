@@ -330,12 +330,6 @@
                     Browse thousands of logos, search instantly, filter by country, and copy direct URLs with one click. 
                     All logos are hosted and ready to use in your projects.
                 </p>
-            </div>
-
-            <a href="https://paypal.me/teaustheim" 
-               class="donate-button" 
-               target="_blank">
-                💰 Support This Project
             </a>
             
             
@@ -563,36 +557,71 @@
                 return;
             }
 
-            grid.innerHTML = logos.map((logo, index) => {
+            // Only display first 100 logos initially
+            displayedLogos = logos.slice(0, LOGOS_PER_PAGE);
+            currentPage = 1;
+            
+            renderLogos(displayedLogos);
+            setupInfiniteScroll(logos);
+        }
+
+        function renderLogos(logos) {
+            const grid = document.getElementById('logosGrid');
+            
+            const html = logos.map((logo, index) => {
                 const fullUrl = window.location.origin + logo.path;
                 return `
                     <div class="logo-card" data-url="${fullUrl}" data-index="${index}">
                         <img src="${logo.path}" 
                              alt="${logo.name}" 
+                             loading="lazy"
                              onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23666%22%3ENo Image%3C/text%3E%3C/svg%3E'">
                         <div class="logo-name">${logo.name}</div>
                         <button class="copy-button">Copy URL</button>
                     </div>
                 `;
             }).join('');
+            
+            if (currentPage === 1) {
+                grid.innerHTML = html;
+            } else {
+                grid.innerHTML += html;
+            }
 
-            // Attach event listeners IMMEDIATELY after inserting HTML
             setTimeout(function() {
-                console.log('Attaching event listeners...');
                 const cards = document.querySelectorAll('.logo-card');
-                console.log('Found ' + cards.length + ' cards to attach listeners to');
-                
                 cards.forEach(function(card) {
-                    card.addEventListener('click', function(event) {
-                        console.log('CARD CLICKED!');
-                        const url = this.getAttribute('data-url');
-                        const button = this.querySelector('.copy-button');
-                        copyToClipboard(url, button);
-                    });
+                    if (!card.dataset.hasListener) {
+                        card.addEventListener('click', function() {
+                            const url = this.getAttribute('data-url');
+                            const button = this.querySelector('.copy-button');
+                            copyToClipboard(url, button);
+                        });
+                        card.dataset.hasListener = 'true';
+                    }
                 });
-                
-                console.log('Event listeners attached!');
-            }, 100);
+            }, 50);
+        }
+
+        function setupInfiniteScroll(allLogos) {
+            let loading = false;
+            window.addEventListener('scroll', function() {
+                if (loading) return;
+                const scrollPosition = window.innerHeight + window.scrollY;
+                const threshold = document.documentElement.scrollHeight - 500;
+                if (scrollPosition >= threshold) {
+                    loading = true;
+                    const start = currentPage * LOGOS_PER_PAGE;
+                    const end = start + LOGOS_PER_PAGE;
+                    const nextBatch = allLogos.slice(start, end);
+                    if (nextBatch.length > 0) {
+                        currentPage++;
+                        displayedLogos = displayedLogos.concat(nextBatch);
+                        renderLogos(nextBatch);
+                    }
+                    setTimeout(() => { loading = false; }, 100);
+                }
+            });
         }
 
         function filterLogos() {
