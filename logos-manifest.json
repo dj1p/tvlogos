@@ -1,6 +1,6 @@
 {
   "generated": "auto",
-  "total": 10332,
+  "total": 10340,
   "logos": [
     {
       "name": "live-plus-1-sg.png",
@@ -9203,6 +9203,11 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-NRK Nyheter.png",
+      "path": "/countries/nordic/norway/NO-NRK Nyheter.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-Showtime.png",
       "path": "/countries/nordic/norway/NO-Showtime.png",
       "country": "nordic/norway"
@@ -9465,6 +9470,11 @@
     {
       "name": "NO-Viasat Premier League HD.png",
       "path": "/countries/nordic/norway/NO-Viasat Premier League HD.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-NRK Folkemusikk.png",
+      "path": "/countries/nordic/norway/NO-NRK Folkemusikk.png",
       "country": "nordic/norway"
     },
     {
@@ -9733,8 +9743,18 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-NRK Klassisk.png",
+      "path": "/countries/nordic/norway/NO-NRK Klassisk.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-Discovery World.png",
       "path": "/countries/nordic/norway/NO-Discovery World.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-NRK Jazz.png",
+      "path": "/countries/nordic/norway/NO-NRK Jazz.png",
       "country": "nordic/norway"
     },
     {
@@ -10283,6 +10303,11 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-NRK Gull.png",
+      "path": "/countries/nordic/norway/NO-NRK Gull.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-TV3+.png",
       "path": "/countries/nordic/norway/NO-TV3+.png",
       "country": "nordic/norway"
@@ -10533,6 +10558,11 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-NRK mP3.png",
+      "path": "/countries/nordic/norway/NO-NRK mP3.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-Canal+ Drama.png",
       "path": "/countries/nordic/norway/NO-Canal+ Drama.png",
       "country": "nordic/norway"
@@ -10763,6 +10793,11 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-NRK P1.png",
+      "path": "/countries/nordic/norway/NO-NRK P1.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-Club TV.png",
       "path": "/countries/nordic/norway/NO-Club TV.png",
       "country": "nordic/norway"
@@ -10770,6 +10805,11 @@
     {
       "name": "tv2-zebra-hz-no.png",
       "path": "/countries/nordic/norway/tv2-zebra-hz-no.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-NRK Alltid Nyheter.png",
+      "path": "/countries/nordic/norway/NO-NRK Alltid Nyheter.png",
       "country": "nordic/norway"
     },
     {
