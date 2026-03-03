@@ -161,11 +161,7 @@
         }
 
 .controls {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-    padding: 15px 0;
+.controls {
     display: flex;
     gap: 15px;
     margin-bottom: 3px;
@@ -421,19 +417,20 @@
             </div>
         </div>
 
-        <div class="controls">
-            <input type="text" 
-                   class="search-box" 
-                   id="searchBox" 
-                   placeholder="🔍 Search logos..." 
-                   onkeyup="filterLogos()">
-            <select class="country-filter" id="countryFilter" onchange="filterLogos()">
-                <option value="">All Countries</option>
-            </select>
-        </div>
+  <div style="position: sticky; top: 0; z-index: 100; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 15px 0;">
+    <div class="controls">
+        <input type="text" 
+               class="search-box" 
+               id="searchBox" 
+               placeholder="🔍 Search logos..." 
+               onkeyup="filterLogos()">
+        <select class="country-filter" id="countryFilter" onchange="filterLogos()">
+            <option value="">All Countries</option>
+        </select>
+    </div>
 
-        <!-- Google AdSense Ad Placeholder -->
-        <div style="text-align: center; margin-bottom: 15px;">
+    <!-- Google AdSense Ad Placeholder -->
+    <div style="text-align: center; margin-bottom: 15px;">
             <div style="background: rgba(102, 126, 234, 0.1); border: 2px dashed rgba(102, 126, 234, 0.3); border-radius: 8px; padding: 40px; max-width: 728px; margin: 0 auto;">
                 <p style="color: #667eea; margin: 0;">📢 Ad Space - Apply for Google AdSense</p>
             </div>
@@ -611,12 +608,22 @@ function filterLogos() {
     const countryFilter = document.getElementById('countryFilter').value;
 
     const filtered = allLogos.filter(logo => {
-        // Better fuzzy search - split search terms and match any part
-        const logoName = logo.name.toLowerCase();
+        // Stricter search - remove file extensions and special chars for matching
+        const logoName = logo.name.toLowerCase()
+            .replace('.png', '')
+            .replace(/-/g, ' ')
+            .replace(/_/g, ' ');
+        
         const searchWords = searchTerm.split(/\s+/).filter(w => w.length > 0);
         
-        // Match if ALL search words are found anywhere in the logo name
-        const matchesSearch = searchTerm === '' || searchWords.every(word => logoName.includes(word));
+        // Match only if ALL search words are found as separate words or at word boundaries
+        const matchesSearch = searchTerm === '' || searchWords.every(word => {
+            // Match whole word or at beginning of word
+            return logoName.includes(' ' + word) || 
+                   logoName.startsWith(word) || 
+                   logoName.includes('-' + word);
+        });
+        
         const matchesCountry = !countryFilter || logo.country === countryFilter;
         
         return matchesSearch && matchesCountry;
