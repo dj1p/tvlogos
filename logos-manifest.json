@@ -1,6 +1,6 @@
 {
   "generated": "auto",
-  "total": 10133,
+  "total": 10232,
   "logos": [
     {
       "name": "live-plus-1-sg.png",
@@ -9153,8 +9153,23 @@
       "country": "nordic"
     },
     {
+      "name": "NO-Spice.png",
+      "path": "/countries/nordic/norway/NO-Spice.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-TV 2 PL1.png",
+      "path": "/countries/nordic/norway/NO-TV 2 PL1.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-TV8 Romerike.png",
       "path": "/countries/nordic/norway/NO-TV8 Romerike.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Viasat Sport HD.png",
+      "path": "/countries/nordic/norway/NO-Viasat Sport HD.png",
       "country": "nordic/norway"
     },
     {
@@ -9168,6 +9183,16 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-MTVN HD.png",
+      "path": "/countries/nordic/norway/NO-MTVN HD.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Playboy TV.png",
+      "path": "/countries/nordic/norway/NO-Playboy TV.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-P5.png",
       "path": "/countries/nordic/norway/NO-P5.png",
       "country": "nordic/norway"
@@ -9175,6 +9200,11 @@
     {
       "name": "NO-TV8 Sunnm_re.png",
       "path": "/countries/nordic/norway/NO-TV8 Sunnm_re.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-National Geographic.png",
+      "path": "/countries/nordic/norway/NO-National Geographic.png",
       "country": "nordic/norway"
     },
     {
@@ -9218,6 +9248,16 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-Nature_Crime_Playboy.png",
+      "path": "/countries/nordic/norway/NO-Nature_Crime_Playboy.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-TV Chile.png",
+      "path": "/countries/nordic/norway/NO-TV Chile.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "sky-showtime-1-no.png",
       "path": "/countries/nordic/norway/sky-showtime-1-no.png",
       "country": "nordic/norway"
@@ -9238,8 +9278,18 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-Gospel Channel Europe.png",
+      "path": "/countries/nordic/norway/NO-Gospel Channel Europe.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "hits-no.png",
       "path": "/countries/nordic/norway/hits-no.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Zone Club.png",
+      "path": "/countries/nordic/norway/NO-Zone Club.png",
       "country": "nordic/norway"
     },
     {
@@ -9253,6 +9303,11 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-MTV NO.png",
+      "path": "/countries/nordic/norway/NO-MTV NO.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "eurosport-pluss3-no.png",
       "path": "/countries/nordic/norway/eurosport-pluss3-no.png",
       "country": "nordic/norway"
@@ -9260,6 +9315,36 @@
     {
       "name": "NO-Yacht & Sail.png",
       "path": "/countries/nordic/norway/NO-Yacht & Sail.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Rai Uno.png",
+      "path": "/countries/nordic/norway/NO-Rai Uno.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Rikstoto Direkte.png",
+      "path": "/countries/nordic/norway/NO-Rikstoto Direkte.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-SVT1.png",
+      "path": "/countries/nordic/norway/NO-SVT1.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-TV 2 PL HD.png",
+      "path": "/countries/nordic/norway/NO-TV 2 PL HD.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-TV 2 HD.png",
+      "path": "/countries/nordic/norway/NO-TV 2 HD.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-TV1000 Plus One.png",
+      "path": "/countries/nordic/norway/NO-TV1000 Plus One.png",
       "country": "nordic/norway"
     },
     {
@@ -9275,6 +9360,31 @@
     {
       "name": "v-sport-live-5-no.png",
       "path": "/countries/nordic/norway/v-sport-live-5-no.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Nat Geo Nordic.png",
+      "path": "/countries/nordic/norway/NO-Nat Geo Nordic.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Viasat Premier League HD.png",
+      "path": "/countries/nordic/norway/NO-Viasat Premier League HD.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Nat Geo Channel.png",
+      "path": "/countries/nordic/norway/NO-Nat Geo Channel.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Get Infokanal.png",
+      "path": "/countries/nordic/norway/NO-Get Infokanal.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-TV 2 PL2.png",
+      "path": "/countries/nordic/norway/NO-TV 2 PL2.png",
       "country": "nordic/norway"
     },
     {
@@ -9308,6 +9418,16 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-NAT Geo _ CNBC.png",
+      "path": "/countries/nordic/norway/NO-NAT Geo _ CNBC.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-TV 2 PL2 HD.png",
+      "path": "/countries/nordic/norway/NO-TV 2 PL2 HD.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "tv-norge-no.png",
       "path": "/countries/nordic/norway/tv-norge-no.png",
       "country": "nordic/norway"
@@ -9333,6 +9453,11 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-Lifestyle TV.png",
+      "path": "/countries/nordic/norway/NO-Lifestyle TV.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "eurosport-pluss9-no.png",
       "path": "/countries/nordic/norway/eurosport-pluss9-no.png",
       "country": "nordic/norway"
@@ -9340,6 +9465,11 @@
     {
       "name": "viasat-nature-no.png",
       "path": "/countries/nordic/norway/viasat-nature-no.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-TRT T_rk.png",
+      "path": "/countries/nordic/norway/NO-TRT T_rk.png",
       "country": "nordic/norway"
     },
     {
@@ -9358,6 +9488,16 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-MTVNHD.png",
+      "path": "/countries/nordic/norway/NO-MTVNHD.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Explorer_Spice.png",
+      "path": "/countries/nordic/norway/NO-Explorer_Spice.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "v-series-hd-no.png",
       "path": "/countries/nordic/norway/v-series-hd-no.png",
       "country": "nordic/norway"
@@ -9368,6 +9508,21 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-Nat Geo Wild.png",
+      "path": "/countries/nordic/norway/NO-Nat Geo Wild.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-VTV4.png",
+      "path": "/countries/nordic/norway/NO-VTV4.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-TV 2 PL1 HD.png",
+      "path": "/countries/nordic/norway/NO-TV 2 PL1 HD.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "nrk3-no.png",
       "path": "/countries/nordic/norway/nrk3-no.png",
       "country": "nordic/norway"
@@ -9375,6 +9530,16 @@
     {
       "name": "eurosport-pluss5-no.png",
       "path": "/countries/nordic/norway/eurosport-pluss5-no.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Star.png",
+      "path": "/countries/nordic/norway/NO-Star.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Silver.png",
+      "path": "/countries/nordic/norway/NO-Silver.png",
       "country": "nordic/norway"
     },
     {
@@ -9398,8 +9563,23 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-YLE TV1.png",
+      "path": "/countries/nordic/norway/NO-YLE TV1.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-TV 2 PL3 HD.png",
+      "path": "/countries/nordic/norway/NO-TV 2 PL3 HD.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-NRK1 Nordnytt.png",
       "path": "/countries/nordic/norway/NO-NRK1 Nordnytt.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-TV 2 Sport.png",
+      "path": "/countries/nordic/norway/NO-TV 2 Sport.png",
       "country": "nordic/norway"
     },
     {
@@ -9415,6 +9595,11 @@
     {
       "name": "NO-TV 2 3D.png",
       "path": "/countries/nordic/norway/NO-TV 2 3D.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Star_Showtime.png",
+      "path": "/countries/nordic/norway/NO-Star_Showtime.png",
       "country": "nordic/norway"
     },
     {
@@ -9438,6 +9623,11 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-Visjon Norge.png",
+      "path": "/countries/nordic/norway/NO-Visjon Norge.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "v-sport-live-1-no.png",
       "path": "/countries/nordic/norway/v-sport-live-1-no.png",
       "country": "nordic/norway"
@@ -9453,6 +9643,11 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-MTV (N).png",
+      "path": "/countries/nordic/norway/NO-MTV (N).png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "rikstoto-direkte-no.png",
       "path": "/countries/nordic/norway/rikstoto-direkte-no.png",
       "country": "nordic/norway"
@@ -9463,6 +9658,11 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-BBC Knowledge.png",
+      "path": "/countries/nordic/norway/NO-BBC Knowledge.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-NRK1 _stafjells.png",
       "path": "/countries/nordic/norway/NO-NRK1 _stafjells.png",
       "country": "nordic/norway"
@@ -9470,6 +9670,11 @@
     {
       "name": "NO-NRK Super _ NRK3.png",
       "path": "/countries/nordic/norway/NO-NRK Super _ NRK3.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-E!.png",
+      "path": "/countries/nordic/norway/NO-E!.png",
       "country": "nordic/norway"
     },
     {
@@ -9490,6 +9695,11 @@
     {
       "name": "NO-TNT7.png",
       "path": "/countries/nordic/norway/NO-TNT7.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Viasat Sport Norge HD.png",
+      "path": "/countries/nordic/norway/NO-Viasat Sport Norge HD.png",
       "country": "nordic/norway"
     },
     {
@@ -9528,6 +9738,11 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-CCTV-9.png",
+      "path": "/countries/nordic/norway/NO-CCTV-9.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-HighTV 3D.png",
       "path": "/countries/nordic/norway/NO-HighTV 3D.png",
       "country": "nordic/norway"
@@ -9558,6 +9773,11 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-TV2 Sport HD.png",
+      "path": "/countries/nordic/norway/NO-TV2 Sport HD.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-MTV Music.png",
       "path": "/countries/nordic/norway/NO-MTV Music.png",
       "country": "nordic/norway"
@@ -9570,6 +9790,16 @@
     {
       "name": "tv3-no.png",
       "path": "/countries/nordic/norway/tv3-no.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-TV 2 PL.png",
+      "path": "/countries/nordic/norway/NO-TV 2 PL.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-NatGeo HD.png",
+      "path": "/countries/nordic/norway/NO-NatGeo HD.png",
       "country": "nordic/norway"
     },
     {
@@ -9588,6 +9818,11 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-Euronews.png",
+      "path": "/countries/nordic/norway/NO-Euronews.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-VOX.png",
       "path": "/countries/nordic/norway/NO-VOX.png",
       "country": "nordic/norway"
@@ -9595,6 +9830,11 @@
     {
       "name": "NO-Cartoon_TCM.png",
       "path": "/countries/nordic/norway/NO-Cartoon_TCM.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-BHT1.png",
+      "path": "/countries/nordic/norway/NO-BHT1.png",
       "country": "nordic/norway"
     },
     {
@@ -9628,13 +9868,33 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-TV 2 (N).png",
+      "path": "/countries/nordic/norway/NO-TV 2 (N).png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-TV5.png",
       "path": "/countries/nordic/norway/NO-TV5.png",
       "country": "nordic/norway"
     },
     {
+      "name": "NO-TVP Polonia.png",
+      "path": "/countries/nordic/norway/NO-TVP Polonia.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Jaam-e-Jam IRIB1.png",
+      "path": "/countries/nordic/norway/NO-Jaam-e-Jam IRIB1.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-NRK3 HD.png",
       "path": "/countries/nordic/norway/NO-NRK3 HD.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-TV 2 Sport 4.png",
+      "path": "/countries/nordic/norway/NO-TV 2 Sport 4.png",
       "country": "nordic/norway"
     },
     {
@@ -9655,6 +9915,11 @@
     {
       "name": "NO-TV 5 Europe.png",
       "path": "/countries/nordic/norway/NO-TV 5 Europe.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-BBC World.png",
+      "path": "/countries/nordic/norway/NO-BBC World.png",
       "country": "nordic/norway"
     },
     {
@@ -9708,6 +9973,11 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-ESPN America HD.png",
+      "path": "/countries/nordic/norway/NO-ESPN America HD.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "tv2-direkte-hz-no.png",
       "path": "/countries/nordic/norway/tv2-direkte-hz-no.png",
       "country": "nordic/norway"
@@ -9718,8 +9988,23 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-MTV.png",
+      "path": "/countries/nordic/norway/NO-MTV.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Nat Geo Wild HD.png",
+      "path": "/countries/nordic/norway/NO-Nat Geo Wild HD.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-Discov World.png",
       "path": "/countries/nordic/norway/NO-Discov World.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-CNBC.png",
+      "path": "/countries/nordic/norway/NO-CNBC.png",
       "country": "nordic/norway"
     },
     {
@@ -9738,6 +10023,16 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-TV 2 Sport 5.png",
+      "path": "/countries/nordic/norway/NO-TV 2 Sport 5.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-ztv.se.png",
+      "path": "/countries/nordic/norway/NO-ztv.se.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "sf-kanalen-no.png",
       "path": "/countries/nordic/norway/sf-kanalen-no.png",
       "country": "nordic/norway"
@@ -9745,6 +10040,11 @@
     {
       "name": "NO-Cooking Channel.png",
       "path": "/countries/nordic/norway/NO-Cooking Channel.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Nat Geo (N).png",
+      "path": "/countries/nordic/norway/NO-Nat Geo (N).png",
       "country": "nordic/norway"
     },
     {
@@ -9768,6 +10068,16 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-BBC HD.png",
+      "path": "/countries/nordic/norway/NO-BBC HD.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-TV 2 Sport 3.png",
+      "path": "/countries/nordic/norway/NO-TV 2 Sport 3.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-Disney Channel.png",
       "path": "/countries/nordic/norway/NO-Disney Channel.png",
       "country": "nordic/norway"
@@ -9778,8 +10088,23 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-TV Norge.png",
+      "path": "/countries/nordic/norway/NO-TV Norge.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-BBC Lifestyle.png",
+      "path": "/countries/nordic/norway/NO-BBC Lifestyle.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-Canal+ Film HD.png",
       "path": "/countries/nordic/norway/NO-Canal+ Film HD.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Boomerang.png",
+      "path": "/countries/nordic/norway/NO-Boomerang.png",
       "country": "nordic/norway"
     },
     {
@@ -9848,8 +10173,28 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-TV6.png",
+      "path": "/countries/nordic/norway/NO-TV6.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Frikanalen.png",
+      "path": "/countries/nordic/norway/NO-Frikanalen.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Zone Reality.png",
+      "path": "/countries/nordic/norway/NO-Zone Reality.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "v-sport-premier-league-4-no.png",
       "path": "/countries/nordic/norway/v-sport-premier-league-4-no.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Blue Hustler.png",
+      "path": "/countries/nordic/norway/NO-Blue Hustler.png",
       "country": "nordic/norway"
     },
     {
@@ -9858,13 +10203,28 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-TV 2 Sport 2.png",
+      "path": "/countries/nordic/norway/NO-TV 2 Sport 2.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-NRK1.png",
       "path": "/countries/nordic/norway/NO-NRK1.png",
       "country": "nordic/norway"
     },
     {
+      "name": "NO-Rush HD.png",
+      "path": "/countries/nordic/norway/NO-Rush HD.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "v-film-premiere-hd-no.png",
       "path": "/countries/nordic/norway/v-film-premiere-hd-no.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-FOX Crime.png",
+      "path": "/countries/nordic/norway/NO-FOX Crime.png",
       "country": "nordic/norway"
     },
     {
@@ -9878,6 +10238,11 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-TRT Int.png",
+      "path": "/countries/nordic/norway/NO-TRT Int.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-NRK1 Vestlandsrevyen.png",
       "path": "/countries/nordic/norway/NO-NRK1 Vestlandsrevyen.png",
       "country": "nordic/norway"
@@ -9888,6 +10253,11 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-Silver HD.png",
+      "path": "/countries/nordic/norway/NO-Silver HD.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-NRK1 Midtnytt.png",
       "path": "/countries/nordic/norway/NO-NRK1 Midtnytt.png",
       "country": "nordic/norway"
@@ -9895,6 +10265,16 @@
     {
       "name": "NO-TVNorge HD.png",
       "path": "/countries/nordic/norway/NO-TVNorge HD.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-TVNorge.png",
+      "path": "/countries/nordic/norway/NO-TVNorge.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-History Chnl HD.png",
+      "path": "/countries/nordic/norway/NO-History Chnl HD.png",
       "country": "nordic/norway"
     },
     {
@@ -9923,8 +10303,18 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-Discov Tra&Liv.png",
+      "path": "/countries/nordic/norway/NO-Discov Tra&Liv.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-TV3 HD (N).png",
       "path": "/countries/nordic/norway/NO-TV3 HD (N).png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-BBC World News.png",
+      "path": "/countries/nordic/norway/NO-BBC World News.png",
       "country": "nordic/norway"
     },
     {
@@ -9948,13 +10338,33 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-Nature_Crime.png",
+      "path": "/countries/nordic/norway/NO-Nature_Crime.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-TV Budstikka.png",
+      "path": "/countries/nordic/norway/NO-TV Budstikka.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "frikanalen-no.png",
       "path": "/countries/nordic/norway/frikanalen-no.png",
       "country": "nordic/norway"
     },
     {
+      "name": "NO-Prime TV.png",
+      "path": "/countries/nordic/norway/NO-Prime TV.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-Canal+ Emotion.png",
       "path": "/countries/nordic/norway/NO-Canal+ Emotion.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-TV Finland.png",
+      "path": "/countries/nordic/norway/NO-TV Finland.png",
       "country": "nordic/norway"
     },
     {
@@ -9965,6 +10375,11 @@
     {
       "name": "NO-The Voice.png",
       "path": "/countries/nordic/norway/NO-The Voice.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-TV 2 Nyhetskanalen.png",
+      "path": "/countries/nordic/norway/NO-TV 2 Nyhetskanalen.png",
       "country": "nordic/norway"
     },
     {
@@ -10048,6 +10463,11 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-Extreme Sports.png",
+      "path": "/countries/nordic/norway/NO-Extreme Sports.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "v-sport-3-no.png",
       "path": "/countries/nordic/norway/v-sport-3-no.png",
       "country": "nordic/norway"
@@ -10055,6 +10475,11 @@
     {
       "name": "viasat-explore-hd-no.png",
       "path": "/countries/nordic/norway/viasat-explore-hd-no.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Bloomberg.png",
+      "path": "/countries/nordic/norway/NO-Bloomberg.png",
       "country": "nordic/norway"
     },
     {
@@ -10068,13 +10493,38 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-ESPN America.png",
+      "path": "/countries/nordic/norway/NO-ESPN America.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-TV Vest.png",
       "path": "/countries/nordic/norway/NO-TV Vest.png",
       "country": "nordic/norway"
     },
     {
+      "name": "NO-3sat.png",
+      "path": "/countries/nordic/norway/NO-3sat.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-SVT HD.png",
+      "path": "/countries/nordic/norway/NO-SVT HD.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-Viasat Film Classic.png",
       "path": "/countries/nordic/norway/NO-Viasat Film Classic.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-NRK Super.png",
+      "path": "/countries/nordic/norway/NO-NRK Super.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Nat Geo HD.png",
+      "path": "/countries/nordic/norway/NO-Nat Geo HD.png",
       "country": "nordic/norway"
     },
     {
@@ -10098,6 +10548,11 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-FEM.png",
+      "path": "/countries/nordic/norway/NO-FEM.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-TV3 (S).png",
       "path": "/countries/nordic/norway/NO-TV3 (S).png",
       "country": "nordic/norway"
@@ -10105,6 +10560,11 @@
     {
       "name": "NO-TVE Internacional.png",
       "path": "/countries/nordic/norway/NO-TVE Internacional.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Fashion TV.png",
+      "path": "/countries/nordic/norway/NO-Fashion TV.png",
       "country": "nordic/norway"
     },
     {
@@ -10128,8 +10588,18 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-SVT2.png",
+      "path": "/countries/nordic/norway/NO-SVT2.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "bilkanalen-auto-motor-sport-tv-no.png",
       "path": "/countries/nordic/norway/bilkanalen-auto-motor-sport-tv-no.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-TV 2 PL3.png",
+      "path": "/countries/nordic/norway/NO-TV 2 PL3.png",
       "country": "nordic/norway"
     },
     {
@@ -10163,8 +10633,18 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-TV 2 Zebra.png",
+      "path": "/countries/nordic/norway/NO-TV 2 Zebra.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "tv2-livsstil-hz-no.png",
       "path": "/countries/nordic/norway/tv2-livsstil-hz-no.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-Party TV.png",
+      "path": "/countries/nordic/norway/NO-Party TV.png",
       "country": "nordic/norway"
     },
     {
@@ -10188,8 +10668,18 @@
       "country": "nordic/norway"
     },
     {
+      "name": "NO-MAX.png",
+      "path": "/countries/nordic/norway/NO-MAX.png",
+      "country": "nordic/norway"
+    },
+    {
       "name": "NO-Discovery (N).png",
       "path": "/countries/nordic/norway/NO-Discovery (N).png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-BBC Entertainment.png",
+      "path": "/countries/nordic/norway/NO-BBC Entertainment.png",
       "country": "nordic/norway"
     },
     {
@@ -10210,6 +10700,11 @@
     {
       "name": "tv6-no.png",
       "path": "/countries/nordic/norway/tv6-no.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "NO-ESPN Classic.png",
+      "path": "/countries/nordic/norway/NO-ESPN Classic.png",
       "country": "nordic/norway"
     },
     {
