@@ -160,13 +160,18 @@
             transform: translateY(-2px);
         }
 
-        .controls {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 3px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+.controls {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 15px 0;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 3px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
         .search-box,
         .country-filter {
@@ -578,40 +583,48 @@
             }, 50);
         }
 
-        function setupInfiniteScroll(allLogos) {
-            let loading = false;
-            window.addEventListener('scroll', function() {
-                if (loading) return;
-                const scrollPosition = window.innerHeight + window.scrollY;
-                const threshold = document.documentElement.scrollHeight - 500;
-                if (scrollPosition >= threshold) {
-                    loading = true;
-                    const start = currentPage * LOGOS_PER_PAGE;
-                    const end = start + LOGOS_PER_PAGE;
-                    const nextBatch = allLogos.slice(start, end);
-                    if (nextBatch.length > 0) {
-                        currentPage++;
-                        displayedLogos = displayedLogos.concat(nextBatch);
-                        renderLogos(nextBatch);
-                    }
-                    setTimeout(() => { loading = false; }, 100);
-                }
-            });
+function setupInfiniteScroll(allLogosToScroll) {
+    let loading = false;
+    let scrollHandler = function() {
+        if (loading) return;
+        const scrollPosition = window.innerHeight + window.scrollY;
+        const threshold = document.documentElement.scrollHeight - 500;
+        if (scrollPosition >= threshold) {
+            loading = true;
+            const start = currentPage * LOGOS_PER_PAGE;
+            const end = start + LOGOS_PER_PAGE;
+            const nextBatch = allLogosToScroll.slice(start, end);
+            if (nextBatch.length > 0) {
+                currentPage++;
+                displayedLogos = displayedLogos.concat(nextBatch);
+                renderLogos(nextBatch);
+            }
+            setTimeout(() => { loading = false; }, 100);
         }
+    };
+    window.removeEventListener('scroll', scrollHandler);
+    window.addEventListener('scroll', scrollHandler);
+}
 
-        function filterLogos() {
-            const searchTerm = document.getElementById('searchBox').value.toLowerCase();
-            const countryFilter = document.getElementById('countryFilter').value;
+function filterLogos() {
+    const searchTerm = document.getElementById('searchBox').value.toLowerCase().trim();
+    const countryFilter = document.getElementById('countryFilter').value;
 
-            const filtered = allLogos.filter(logo => {
-                const matchesSearch = logo.name.toLowerCase().includes(searchTerm);
-                const matchesCountry = !countryFilter || logo.country === countryFilter;
-                return matchesSearch && matchesCountry;
-            });
+    const filtered = allLogos.filter(logo => {
+        // Better fuzzy search - split search terms and match any part
+        const logoName = logo.name.toLowerCase();
+        const searchWords = searchTerm.split(/\s+/).filter(w => w.length > 0);
+        
+        // Match if ALL search words are found anywhere in the logo name
+        const matchesSearch = searchTerm === '' || searchWords.every(word => logoName.includes(word));
+        const matchesCountry = !countryFilter || logo.country === countryFilter;
+        
+        return matchesSearch && matchesCountry;
+    });
 
-            displayLogos(filtered);
-            updateStats(filtered.length);
-        }
+    displayLogos(filtered);
+    updateStats(filtered.length);
+}
 
         function updateStats(count = null) {
             const total = count !== null ? count : allLogos.length;
