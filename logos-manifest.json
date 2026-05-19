@@ -1,6 +1,6 @@
 {
   "generated": "auto",
-  "total": 10347,
+  "total": 10761,
   "logos": [
     {
       "name": "rush-2-car.png",
@@ -35853,6 +35853,11 @@
       "country": "india"
     },
     {
+      "name": "AXN.png",
+      "path": "/countries/india/AXN.png",
+      "country": "india"
+    },
+    {
       "name": "travelxp-4k-in.png",
       "path": "/countries/india/travelxp-4k-in.png",
       "country": "india"
@@ -41258,8 +41263,88 @@
       "country": "poland"
     },
     {
+      "name": "sd-attv.png",
+      "path": "/countries/thailand/sd-attv.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-skynetsports1.png",
+      "path": "/countries/thailand/sd-skynetsports1.png",
+      "country": "thailand"
+    },
+    {
+      "name": "cctvnews.png",
+      "path": "/countries/thailand/cctvnews.png",
+      "country": "thailand"
+    },
+    {
+      "name": "0006.png",
+      "path": "/countries/thailand/0006.png",
+      "country": "thailand"
+    },
+    {
+      "name": "Arirang.png",
+      "path": "/countries/thailand/Arirang.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-discovery.png",
+      "path": "/countries/thailand/sd-discovery.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-aljazeera.png",
+      "path": "/countries/thailand/sd-aljazeera.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-tnn.png",
+      "path": "/countries/thailand/sd-tnn.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-skynetsportshd.png",
+      "path": "/countries/thailand/sd-skynetsportshd.png",
+      "country": "thailand"
+    },
+    {
+      "name": "tsports.png",
+      "path": "/countries/thailand/tsports.png",
+      "country": "thailand"
+    },
+    {
       "name": "amarin1.png",
       "path": "/countries/thailand/amarin1.png",
+      "country": "thailand"
+    },
+    {
+      "name": "kbs.png",
+      "path": "/countries/thailand/kbs.png",
+      "country": "thailand"
+    },
+    {
+      "name": "RT_TV.png",
+      "path": "/countries/thailand/RT_TV.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-skysports-action.png",
+      "path": "/countries/thailand/uk-skysports-action.png",
+      "country": "thailand"
+    },
+    {
+      "name": "White_Channel.png",
+      "path": "/countries/thailand/White_Channel.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-rtlcbsextreme.png",
+      "path": "/countries/thailand/hd-rtlcbsextreme.png",
+      "country": "thailand"
+    },
+    {
+      "name": "cnn.png",
+      "path": "/countries/thailand/cnn.png",
       "country": "thailand"
     },
     {
@@ -41273,8 +41358,58 @@
       "country": "thailand"
     },
     {
+      "name": "sd-bbcearth.png",
+      "path": "/countries/thailand/sd-bbcearth.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-mcot.png",
+      "path": "/countries/thailand/hd-mcot.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-boomerang.png",
+      "path": "/countries/thailand/sd-boomerang.png",
+      "country": "thailand"
+    },
+    {
       "name": "Ch10TVThai.png",
       "path": "/countries/thailand/Ch10TVThai.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-asianseries.png",
+      "path": "/countries/thailand/sd-asianseries.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-gmmone.png",
+      "path": "/countries/thailand/hd-gmmone.png",
+      "country": "thailand"
+    },
+    {
+      "name": "SCM.png",
+      "path": "/countries/thailand/SCM.png",
+      "country": "thailand"
+    },
+    {
+      "name": "logo-channel-07.png",
+      "path": "/countries/thailand/logo-channel-07.png",
+      "country": "thailand"
+    },
+    {
+      "name": "logo-channel-15.png",
+      "path": "/countries/thailand/logo-channel-15.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-sparkplay.png",
+      "path": "/countries/thailand/sd-sparkplay.png",
+      "country": "thailand"
+    },
+    {
+      "name": "Fashion_TV.png",
+      "path": "/countries/thailand/Fashion_TV.png",
       "country": "thailand"
     },
     {
@@ -41293,8 +41428,18 @@
       "country": "thailand"
     },
     {
+      "name": "animalplanet.png",
+      "path": "/countries/thailand/animalplanet.png",
+      "country": "thailand"
+    },
+    {
       "name": "Mono Plus.png",
       "path": "/countries/thailand/Mono Plus.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-dmax.png",
+      "path": "/countries/thailand/uk-dmax.png",
       "country": "thailand"
     },
     {
@@ -41303,8 +41448,23 @@
       "country": "thailand"
     },
     {
+      "name": "tsp6.png",
+      "path": "/countries/thailand/tsp6.png",
+      "country": "thailand"
+    },
+    {
       "name": "filmhd2.png",
       "path": "/countries/thailand/filmhd2.png",
+      "country": "thailand"
+    },
+    {
+      "name": "skynetsport5.png",
+      "path": "/countries/thailand/skynetsport5.png",
+      "country": "thailand"
+    },
+    {
+      "name": "logo-channel-08.png",
+      "path": "/countries/thailand/logo-channel-08.png",
       "country": "thailand"
     },
     {
@@ -41313,8 +41473,53 @@
       "country": "thailand"
     },
     {
+      "name": "uk-e4.png",
+      "path": "/countries/thailand/uk-e4.png",
+      "country": "thailand"
+    },
+    {
+      "name": "logo-channel-13.png",
+      "path": "/countries/thailand/logo-channel-13.png",
+      "country": "thailand"
+    },
+    {
+      "name": "bbcearth.png",
+      "path": "/countries/thailand/bbcearth.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-mono.png",
+      "path": "/countries/thailand/hd-mono.png",
+      "country": "thailand"
+    },
+    {
       "name": "Movie5.png",
       "path": "/countries/thailand/Movie5.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-tvb.png",
+      "path": "/countries/thailand/sd-tvb.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-mcotfamily.png",
+      "path": "/countries/thailand/sd-mcotfamily.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-gmmchannel.png",
+      "path": "/countries/thailand/sd-gmmchannel.png",
+      "country": "thailand"
+    },
+    {
+      "name": "doomovie-epl4.png",
+      "path": "/countries/thailand/doomovie-epl4.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-now.png",
+      "path": "/countries/thailand/sd-now.png",
       "country": "thailand"
     },
     {
@@ -41323,8 +41528,38 @@
       "country": "thailand"
     },
     {
+      "name": "wwe.png",
+      "path": "/countries/thailand/wwe.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-mtvchina.png",
+      "path": "/countries/thailand/sd-mtvchina.png",
+      "country": "thailand"
+    },
+    {
       "name": "cartoonnetwork.png",
       "path": "/countries/thailand/cartoonnetwork.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-foodnetwork.png",
+      "path": "/countries/thailand/uk-foodnetwork.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-history.png",
+      "path": "/countries/thailand/hd-history.png",
+      "country": "thailand"
+    },
+    {
+      "name": "doomovie-epl1.png",
+      "path": "/countries/thailand/doomovie-epl1.png",
+      "country": "thailand"
+    },
+    {
+      "name": "epl-bein2.png",
+      "path": "/countries/thailand/epl-bein2.png",
       "country": "thailand"
     },
     {
@@ -41343,8 +41578,93 @@
       "country": "thailand"
     },
     {
+      "name": "sporttv11.png",
+      "path": "/countries/thailand/sporttv11.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-premiersports.png",
+      "path": "/countries/thailand/uk-premiersports.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-btsport3hd.png",
+      "path": "/countries/thailand/uk-btsport3hd.png",
+      "country": "thailand"
+    },
+    {
+      "name": "axn.png",
+      "path": "/countries/thailand/axn.png",
+      "country": "thailand"
+    },
+    {
+      "name": "foxlife.png",
+      "path": "/countries/thailand/foxlife.png",
+      "country": "thailand"
+    },
+    {
+      "name": "premierfootball1_bk.png",
+      "path": "/countries/thailand/premierfootball1_bk.png",
+      "country": "thailand"
+    },
+    {
+      "name": "logo-channel-01.png",
+      "path": "/countries/thailand/logo-channel-01.png",
+      "country": "thailand"
+    },
+    {
+      "name": "truesci.png",
+      "path": "/countries/thailand/truesci.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-celestial.png",
+      "path": "/countries/thailand/sd-celestial.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-tennis.png",
+      "path": "/countries/thailand/hd-tennis.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-bbclifestyle.png",
+      "path": "/countries/thailand/sd-bbclifestyle.png",
+      "country": "thailand"
+    },
+    {
+      "name": "tsp2.png",
+      "path": "/countries/thailand/tsp2.png",
+      "country": "thailand"
+    },
+    {
       "name": "ch7-hd.png",
       "path": "/countries/thailand/ch7-hd.png",
+      "country": "thailand"
+    },
+    {
+      "name": "SMMTV.png",
+      "path": "/countries/thailand/SMMTV.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-food.png",
+      "path": "/countries/thailand/hd-food.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-itv1hd.png",
+      "path": "/countries/thailand/uk-itv1hd.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-id.png",
+      "path": "/countries/thailand/uk-id.png",
+      "country": "thailand"
+    },
+    {
+      "name": "foodnetworkuk.png",
+      "path": "/countries/thailand/foodnetworkuk.png",
       "country": "thailand"
     },
     {
@@ -41353,13 +41673,168 @@
       "country": "thailand"
     },
     {
+      "name": "sd-skynetsports3.png",
+      "path": "/countries/thailand/sd-skynetsports3.png",
+      "country": "thailand"
+    },
+    {
+      "name": "logo-channel-02.png",
+      "path": "/countries/thailand/logo-channel-02.png",
+      "country": "thailand"
+    },
+    {
+      "name": "foxsport1bkp.png",
+      "path": "/countries/thailand/foxsport1bkp.png",
+      "country": "thailand"
+    },
+    {
+      "name": "ZeeNung.png",
+      "path": "/countries/thailand/ZeeNung.png",
+      "country": "thailand"
+    },
+    {
+      "name": "foodnetwork.png",
+      "path": "/countries/thailand/foodnetwork.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-cartoonito.png",
+      "path": "/countries/thailand/uk-cartoonito.png",
+      "country": "thailand"
+    },
+    {
       "name": "Ch3HDLogo.png",
       "path": "/countries/thailand/Ch3HDLogo.png",
       "country": "thailand"
     },
     {
+      "name": "StarUtsav.png",
+      "path": "/countries/thailand/StarUtsav.png",
+      "country": "thailand"
+    },
+    {
+      "name": "mutv.png",
+      "path": "/countries/thailand/mutv.png",
+      "country": "thailand"
+    },
+    {
+      "name": "eurosport.png",
+      "path": "/countries/thailand/eurosport.png",
+      "country": "thailand"
+    },
+    {
+      "name": "TSportsChannel.png",
+      "path": "/countries/thailand/TSportsChannel.png",
+      "country": "thailand"
+    },
+    {
+      "name": "logo-channel-06.png",
+      "path": "/countries/thailand/logo-channel-06.png",
+      "country": "thailand"
+    },
+    {
+      "name": "psisaradee.png",
+      "path": "/countries/thailand/psisaradee.png",
+      "country": "thailand"
+    },
+    {
+      "name": "foxsport3bkp.png",
+      "path": "/countries/thailand/foxsport3bkp.png",
+      "country": "thailand"
+    },
+    {
+      "name": "0054.png",
+      "path": "/countries/thailand/0054.png",
+      "country": "thailand"
+    },
+    {
+      "name": "0021.png",
+      "path": "/countries/thailand/0021.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-sme.png",
+      "path": "/countries/thailand/sd-sme.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-itv2.png",
+      "path": "/countries/thailand/uk-itv2.png",
+      "country": "thailand"
+    },
+    {
+      "name": "ZeeClassic.png",
+      "path": "/countries/thailand/ZeeClassic.png",
+      "country": "thailand"
+    },
+    {
       "name": "thairathfhd.png",
       "path": "/countries/thailand/thairathfhd.png",
+      "country": "thailand"
+    },
+    {
+      "name": "TPTVLOGO.png",
+      "path": "/countries/thailand/TPTVLOGO.png",
+      "country": "thailand"
+    },
+    {
+      "name": "OShopping.png",
+      "path": "/countries/thailand/OShopping.png",
+      "country": "thailand"
+    },
+    {
+      "name": "BabyTVHD.png",
+      "path": "/countries/thailand/BabyTVHD.png",
+      "country": "thailand"
+    },
+    {
+      "name": "STAR_BHARAT.png",
+      "path": "/countries/thailand/STAR_BHARAT.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-foxlife.png",
+      "path": "/countries/thailand/hd-foxlife.png",
+      "country": "thailand"
+    },
+    {
+      "name": "logo-channel-14.png",
+      "path": "/countries/thailand/logo-channel-14.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-explife.png",
+      "path": "/countries/thailand/sd-explife.png",
+      "country": "thailand"
+    },
+    {
+      "name": "epl-4.png",
+      "path": "/countries/thailand/epl-4.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-skynetsports4.png",
+      "path": "/countries/thailand/sd-skynetsports4.png",
+      "country": "thailand"
+    },
+    {
+      "name": "skysportepl.png",
+      "path": "/countries/thailand/skysportepl.png",
+      "country": "thailand"
+    },
+    {
+      "name": "euronews.png",
+      "path": "/countries/thailand/euronews.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-rtlcbs.png",
+      "path": "/countries/thailand/hd-rtlcbs.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-chvinter.png",
+      "path": "/countries/thailand/sd-chvinter.png",
       "country": "thailand"
     },
     {
@@ -41373,6 +41848,11 @@
       "country": "thailand"
     },
     {
+      "name": "truewild.png",
+      "path": "/countries/thailand/truewild.png",
+      "country": "thailand"
+    },
+    {
       "name": "mono29.png",
       "path": "/countries/thailand/mono29.png",
       "country": "thailand"
@@ -41380,6 +41860,21 @@
     {
       "name": "newtv.png",
       "path": "/countries/thailand/newtv.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-nba.png",
+      "path": "/countries/thailand/hd-nba.png",
+      "country": "thailand"
+    },
+    {
+      "name": "skynetsport1.png",
+      "path": "/countries/thailand/skynetsport1.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-more4.png",
+      "path": "/countries/thailand/uk-more4.png",
       "country": "thailand"
     },
     {
@@ -41393,13 +41888,48 @@
       "country": "thailand"
     },
     {
+      "name": "sd-foxsports3.png",
+      "path": "/countries/thailand/sd-foxsports3.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-expwild.png",
+      "path": "/countries/thailand/sd-expwild.png",
+      "country": "thailand"
+    },
+    {
       "name": "Mono_29_Logo.png",
       "path": "/countries/thailand/Mono_29_Logo.png",
       "country": "thailand"
     },
     {
+      "name": "tsphd2.png",
+      "path": "/countries/thailand/tsphd2.png",
+      "country": "thailand"
+    },
+    {
       "name": "disneyxd.png",
       "path": "/countries/thailand/disneyxd.png",
+      "country": "thailand"
+    },
+    {
+      "name": "0001.png",
+      "path": "/countries/thailand/0001.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-disneyxd.png",
+      "path": "/countries/thailand/hd-disneyxd.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-tsport3.png",
+      "path": "/countries/thailand/hd-tsport3.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-itv3.png",
+      "path": "/countries/thailand/uk-itv3.png",
       "country": "thailand"
     },
     {
@@ -41418,13 +41948,38 @@
       "country": "thailand"
     },
     {
+      "name": "hd-natgeo.png",
+      "path": "/countries/thailand/hd-natgeo.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-cctvnews.png",
+      "path": "/countries/thailand/sd-cctvnews.png",
+      "country": "thailand"
+    },
+    {
       "name": "ch5new.logo.png",
       "path": "/countries/thailand/ch5new.logo.png",
       "country": "thailand"
     },
     {
+      "name": "uk-skysports-golf.png",
+      "path": "/countries/thailand/uk-skysports-golf.png",
+      "country": "thailand"
+    },
+    {
+      "name": "skysportnews.png",
+      "path": "/countries/thailand/skysportnews.png",
+      "country": "thailand"
+    },
+    {
       "name": "foxactionthai.png",
       "path": "/countries/thailand/foxactionthai.png",
+      "country": "thailand"
+    },
+    {
+      "name": "epl-3.png",
+      "path": "/countries/thailand/epl-3.png",
       "country": "thailand"
     },
     {
@@ -41438,8 +41993,28 @@
       "country": "thailand"
     },
     {
+      "name": "skysportmain.png",
+      "path": "/countries/thailand/skysportmain.png",
+      "country": "thailand"
+    },
+    {
+      "name": "us-cnbc.png",
+      "path": "/countries/thailand/us-cnbc.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-ci.png",
+      "path": "/countries/thailand/uk-ci.png",
+      "country": "thailand"
+    },
+    {
       "name": "boomerang.png",
       "path": "/countries/thailand/boomerang.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-bbc2hd.png",
+      "path": "/countries/thailand/uk-bbc2hd.png",
       "country": "thailand"
     },
     {
@@ -41448,13 +42023,108 @@
       "country": "thailand"
     },
     {
+      "name": "uk-dave.png",
+      "path": "/countries/thailand/uk-dave.png",
+      "country": "thailand"
+    },
+    {
+      "name": "france24.png",
+      "path": "/countries/thailand/france24.png",
+      "country": "thailand"
+    },
+    {
+      "name": "foxsport3.png",
+      "path": "/countries/thailand/foxsport3.png",
+      "country": "thailand"
+    },
+    {
+      "name": "kmtv.png",
+      "path": "/countries/thailand/kmtv.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-drama.png",
+      "path": "/countries/thailand/uk-drama.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-nfl.png",
+      "path": "/countries/thailand/hd-nfl.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-nbt.png",
+      "path": "/countries/thailand/sd-nbt.png",
+      "country": "thailand"
+    },
+    {
       "name": "CH7.png",
       "path": "/countries/thailand/CH7.png",
       "country": "thailand"
     },
     {
+      "name": "Star_Gold.png",
+      "path": "/countries/thailand/Star_Gold.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-cnn.png",
+      "path": "/countries/thailand/uk-cnn.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-skysports-news.png",
+      "path": "/countries/thailand/uk-skysports-news.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-thrill.png",
+      "path": "/countries/thailand/sd-thrill.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-kbsworld.png",
+      "path": "/countries/thailand/hd-kbsworld.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-motorvision.png",
+      "path": "/countries/thailand/hd-motorvision.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-warnertv.png",
+      "path": "/countries/thailand/hd-warnertv.png",
+      "country": "thailand"
+    },
+    {
+      "name": "supten.png",
+      "path": "/countries/thailand/supten.png",
+      "country": "thailand"
+    },
+    {
+      "name": "doomovie-epl5.png",
+      "path": "/countries/thailand/doomovie-epl5.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-sparkjump.png",
+      "path": "/countries/thailand/sd-sparkjump.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-discovery.png",
+      "path": "/countries/thailand/uk-discovery.png",
+      "country": "thailand"
+    },
+    {
       "name": "TPTV 10.png",
       "path": "/countries/thailand/TPTV 10.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-nickjr.png",
+      "path": "/countries/thailand/sd-nickjr.png",
       "country": "thailand"
     },
     {
@@ -41468,8 +42138,38 @@
       "country": "thailand"
     },
     {
+      "name": "TGN.png",
+      "path": "/countries/thailand/TGN.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-tppy.png",
+      "path": "/countries/thailand/sd-tppy.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-tsport5.png",
+      "path": "/countries/thailand/sd-tsport5.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-skysports-football.png",
+      "path": "/countries/thailand/uk-skysports-football.png",
+      "country": "thailand"
+    },
+    {
       "name": "truefilmasia.png",
       "path": "/countries/thailand/truefilmasia.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-tsport4.png",
+      "path": "/countries/thailand/hd-tsport4.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-sbt.png",
+      "path": "/countries/thailand/sd-sbt.png",
       "country": "thailand"
     },
     {
@@ -41483,13 +42183,68 @@
       "country": "thailand"
     },
     {
+      "name": "sd-tptv.png",
+      "path": "/countries/thailand/sd-tptv.png",
+      "country": "thailand"
+    },
+    {
+      "name": "tsp5.png",
+      "path": "/countries/thailand/tsp5.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-asianfood.png",
+      "path": "/countries/thailand/sd-asianfood.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-bbc3hd.png",
+      "path": "/countries/thailand/uk-bbc3hd.png",
+      "country": "thailand"
+    },
+    {
       "name": "hbohdeng.png",
       "path": "/countries/thailand/hbohdeng.png",
       "country": "thailand"
     },
     {
+      "name": "sd-mixmajor.png",
+      "path": "/countries/thailand/sd-mixmajor.png",
+      "country": "thailand"
+    },
+    {
+      "name": "samrujrok.png",
+      "path": "/countries/thailand/samrujrok.png",
+      "country": "thailand"
+    },
+    {
+      "name": "premierfootball2.png",
+      "path": "/countries/thailand/premierfootball2.png",
+      "country": "thailand"
+    },
+    {
       "name": "x240.png",
       "path": "/countries/thailand/x240.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-eurosport2.png",
+      "path": "/countries/thailand/uk-eurosport2.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-amarin.png",
+      "path": "/countries/thailand/hd-amarin.png",
+      "country": "thailand"
+    },
+    {
+      "name": "aljazeera.png",
+      "path": "/countries/thailand/aljazeera.png",
+      "country": "thailand"
+    },
+    {
+      "name": "NHK_WORLD_TV.png",
+      "path": "/countries/thailand/NHK_WORLD_TV.png",
       "country": "thailand"
     },
     {
@@ -41503,8 +42258,83 @@
       "country": "thailand"
     },
     {
+      "name": "uk-cbsdrama.png",
+      "path": "/countries/thailand/uk-cbsdrama.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-history2.png",
+      "path": "/countries/thailand/uk-history2.png",
+      "country": "thailand"
+    },
+    {
+      "name": "logo-channel-05.png",
+      "path": "/countries/thailand/logo-channel-05.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-thairath.png",
+      "path": "/countries/thailand/hd-thairath.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-tnn24.png",
+      "path": "/countries/thailand/sd-tnn24.png",
+      "country": "thailand"
+    },
+    {
+      "name": "skysportaction.png",
+      "path": "/countries/thailand/skysportaction.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-hits.png",
+      "path": "/countries/thailand/sd-hits.png",
+      "country": "thailand"
+    },
+    {
       "name": "foxcrime.png",
       "path": "/countries/thailand/foxcrime.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-skynews.png",
+      "path": "/countries/thailand/uk-skynews.png",
+      "country": "thailand"
+    },
+    {
+      "name": "skynetsport3.png",
+      "path": "/countries/thailand/skynetsport3.png",
+      "country": "thailand"
+    },
+    {
+      "name": "SCC_HD.png",
+      "path": "/countries/thailand/SCC_HD.png",
+      "country": "thailand"
+    },
+    {
+      "name": "foxsport2bkp.png",
+      "path": "/countries/thailand/foxsport2bkp.png",
+      "country": "thailand"
+    },
+    {
+      "name": "NEWS1.png",
+      "path": "/countries/thailand/NEWS1.png",
+      "country": "thailand"
+    },
+    {
+      "name": "ANDTV.png",
+      "path": "/countries/thailand/ANDTV.png",
+      "country": "thailand"
+    },
+    {
+      "name": "Nick_Jr.png",
+      "path": "/countries/thailand/Nick_Jr.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-itv4.png",
+      "path": "/countries/thailand/uk-itv4.png",
       "country": "thailand"
     },
     {
@@ -41518,8 +42348,33 @@
       "country": "thailand"
     },
     {
+      "name": "skysportfootball.png",
+      "path": "/countries/thailand/skysportfootball.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-workpoint.png",
+      "path": "/countries/thailand/hd-workpoint.png",
+      "country": "thailand"
+    },
+    {
+      "name": "bloombergtv.png",
+      "path": "/countries/thailand/bloombergtv.png",
+      "country": "thailand"
+    },
+    {
+      "name": "ztv-LOGO.png",
+      "path": "/countries/thailand/ztv-LOGO.png",
+      "country": "thailand"
+    },
+    {
       "name": "Channel 9 MCOT.png",
       "path": "/countries/thailand/Channel 9 MCOT.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-skysports-cricket.png",
+      "path": "/countries/thailand/uk-skysports-cricket.png",
       "country": "thailand"
     },
     {
@@ -41533,8 +42388,23 @@
       "country": "thailand"
     },
     {
+      "name": "0015_R.png",
+      "path": "/countries/thailand/0015_R.png",
+      "country": "thailand"
+    },
+    {
+      "name": "tsphd3.png",
+      "path": "/countries/thailand/tsphd3.png",
+      "country": "thailand"
+    },
+    {
       "name": "ALTV.png",
       "path": "/countries/thailand/ALTV.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-skynetsports2.png",
+      "path": "/countries/thailand/sd-skynetsports2.png",
       "country": "thailand"
     },
     {
@@ -41543,13 +42413,43 @@
       "country": "thailand"
     },
     {
+      "name": "sd-deutschewelle.png",
+      "path": "/countries/thailand/sd-deutschewelle.png",
+      "country": "thailand"
+    },
+    {
+      "name": "bein1.png",
+      "path": "/countries/thailand/bein1.png",
+      "country": "thailand"
+    },
+    {
       "name": "thairath.png",
       "path": "/countries/thailand/thairath.png",
       "country": "thailand"
     },
     {
+      "name": "davinci.png",
+      "path": "/countries/thailand/davinci.png",
+      "country": "thailand"
+    },
+    {
+      "name": "tennis.png",
+      "path": "/countries/thailand/tennis.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-cbeebieshd.png",
+      "path": "/countries/thailand/uk-cbeebieshd.png",
+      "country": "thailand"
+    },
+    {
       "name": "onehd.png",
       "path": "/countries/thailand/onehd.png",
+      "country": "thailand"
+    },
+    {
+      "name": "epl-1.png",
+      "path": "/countries/thailand/epl-1.png",
       "country": "thailand"
     },
     {
@@ -41568,8 +42468,18 @@
       "country": "thailand"
     },
     {
+      "name": "skysportf1.png",
+      "path": "/countries/thailand/skysportf1.png",
+      "country": "thailand"
+    },
+    {
       "name": "nickjr.png",
       "path": "/countries/thailand/nickjr.png",
+      "country": "thailand"
+    },
+    {
+      "name": "turbo.png",
+      "path": "/countries/thailand/turbo.png",
       "country": "thailand"
     },
     {
@@ -41578,8 +42488,33 @@
       "country": "thailand"
     },
     {
+      "name": "ZeeCinema.png",
+      "path": "/countries/thailand/ZeeCinema.png",
+      "country": "thailand"
+    },
+    {
       "name": "Mono Plus 2.png",
       "path": "/countries/thailand/Mono Plus 2.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sabuydeetv.png",
+      "path": "/countries/thailand/sabuydeetv.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-tfilm2.png",
+      "path": "/countries/thailand/hd-tfilm2.png",
+      "country": "thailand"
+    },
+    {
+      "name": "skynetsport2.png",
+      "path": "/countries/thailand/skynetsport2.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-foxfamily.png",
+      "path": "/countries/thailand/hd-foxfamily.png",
       "country": "thailand"
     },
     {
@@ -41588,8 +42523,18 @@
       "country": "thailand"
     },
     {
+      "name": "animalshow.png",
+      "path": "/countries/thailand/animalshow.png",
+      "country": "thailand"
+    },
+    {
       "name": "0013_R.png",
       "path": "/countries/thailand/0013_R.png",
+      "country": "thailand"
+    },
+    {
+      "name": "logo-channel-12.png",
+      "path": "/countries/thailand/logo-channel-12.png",
       "country": "thailand"
     },
     {
@@ -41598,8 +42543,43 @@
       "country": "thailand"
     },
     {
+      "name": "uk-skysports-mainevent.png",
+      "path": "/countries/thailand/uk-skysports-mainevent.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-cbsreality.png",
+      "path": "/countries/thailand/uk-cbsreality.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-skysports-f1.png",
+      "path": "/countries/thailand/uk-skysports-f1.png",
+      "country": "thailand"
+    },
+    {
+      "name": "premierfootball5.png",
+      "path": "/countries/thailand/premierfootball5.png",
+      "country": "thailand"
+    },
+    {
+      "name": "bluesky.png",
+      "path": "/countries/thailand/bluesky.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-series.png",
+      "path": "/countries/thailand/sd-series.png",
+      "country": "thailand"
+    },
+    {
       "name": "hbofam.png",
       "path": "/countries/thailand/hbofam.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-golf.png",
+      "path": "/countries/thailand/hd-golf.png",
       "country": "thailand"
     },
     {
@@ -41608,8 +42588,48 @@
       "country": "thailand"
     },
     {
+      "name": "logo-channel-03.png",
+      "path": "/countries/thailand/logo-channel-03.png",
+      "country": "thailand"
+    },
+    {
+      "name": "Boomerang.png",
+      "path": "/countries/thailand/Boomerang.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-foxsports2.png",
+      "path": "/countries/thailand/sd-foxsports2.png",
+      "country": "thailand"
+    },
+    {
+      "name": "MiaoMi.png",
+      "path": "/countries/thailand/MiaoMi.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-discovery.png",
+      "path": "/countries/thailand/hd-discovery.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-natgeowild.png",
+      "path": "/countries/thailand/hd-natgeowild.png",
+      "country": "thailand"
+    },
+    {
+      "name": "tsphd2_bkp1.png",
+      "path": "/countries/thailand/tsphd2_bkp1.png",
+      "country": "thailand"
+    },
+    {
       "name": "Movie6.png",
       "path": "/countries/thailand/Movie6.png",
+      "country": "thailand"
+    },
+    {
+      "name": "bt2.png",
+      "path": "/countries/thailand/bt2.png",
       "country": "thailand"
     },
     {
@@ -41623,6 +42643,71 @@
       "country": "thailand"
     },
     {
+      "name": "lifetime.png",
+      "path": "/countries/thailand/lifetime.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-cctv.png",
+      "path": "/countries/thailand/sd-cctv.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-bbcnewshd.png",
+      "path": "/countries/thailand/uk-bbcnewshd.png",
+      "country": "thailand"
+    },
+    {
+      "name": "foxsport2.png",
+      "path": "/countries/thailand/foxsport2.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-france24.png",
+      "path": "/countries/thailand/sd-france24.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-comedycentral.png",
+      "path": "/countries/thailand/hd-comedycentral.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-skynetsports5.png",
+      "path": "/countries/thailand/sd-skynetsports5.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-alibi.png",
+      "path": "/countries/thailand/uk-alibi.png",
+      "country": "thailand"
+    },
+    {
+      "name": "channelvinter.png",
+      "path": "/countries/thailand/channelvinter.png",
+      "country": "thailand"
+    },
+    {
+      "name": "inside.png",
+      "path": "/countries/thailand/inside.png",
+      "country": "thailand"
+    },
+    {
+      "name": "logo-channel-11.png",
+      "path": "/countries/thailand/logo-channel-11.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-disney.png",
+      "path": "/countries/thailand/sd-disney.png",
+      "country": "thailand"
+    },
+    {
+      "name": "truelife.png",
+      "path": "/countries/thailand/truelife.png",
+      "country": "thailand"
+    },
+    {
       "name": "trueasian.png",
       "path": "/countries/thailand/trueasian.png",
       "country": "thailand"
@@ -41630,6 +42715,26 @@
     {
       "name": "Star.chinese.movies.legend.png",
       "path": "/countries/thailand/Star.chinese.movies.legend.png",
+      "country": "thailand"
+    },
+    {
+      "name": "oshop.png",
+      "path": "/countries/thailand/oshop.png",
+      "country": "thailand"
+    },
+    {
+      "name": "tsphd1bkp1.png",
+      "path": "/countries/thailand/tsphd1bkp1.png",
+      "country": "thailand"
+    },
+    {
+      "name": "tsphd1.png",
+      "path": "/countries/thailand/tsphd1.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-attheraces.png",
+      "path": "/countries/thailand/uk-attheraces.png",
       "country": "thailand"
     },
     {
@@ -41643,13 +42748,58 @@
       "country": "thailand"
     },
     {
+      "name": "hd-tfilm.png",
+      "path": "/countries/thailand/hd-tfilm.png",
+      "country": "thailand"
+    },
+    {
       "name": "classicmovies.png",
       "path": "/countries/thailand/classicmovies.png",
       "country": "thailand"
     },
     {
+      "name": "uk-skysports-mix.png",
+      "path": "/countries/thailand/uk-skysports-mix.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-tsport1.png",
+      "path": "/countries/thailand/hd-tsport1.png",
+      "country": "thailand"
+    },
+    {
+      "name": "YATEEM_TV.png",
+      "path": "/countries/thailand/YATEEM_TV.png",
+      "country": "thailand"
+    },
+    {
+      "name": "znews.png",
+      "path": "/countries/thailand/znews.png",
+      "country": "thailand"
+    },
+    {
       "name": "paramount.png",
       "path": "/countries/thailand/paramount.png",
+      "country": "thailand"
+    },
+    {
+      "name": "0036.png",
+      "path": "/countries/thailand/0036.png",
+      "country": "thailand"
+    },
+    {
+      "name": "natpeople.png",
+      "path": "/countries/thailand/natpeople.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-tsport2.png",
+      "path": "/countries/thailand/hd-tsport2.png",
+      "country": "thailand"
+    },
+    {
+      "name": "smmtv.png",
+      "path": "/countries/thailand/smmtv.png",
       "country": "thailand"
     },
     {
@@ -41663,6 +42813,11 @@
       "country": "thailand"
     },
     {
+      "name": "uk-challenge.png",
+      "path": "/countries/thailand/uk-challenge.png",
+      "country": "thailand"
+    },
+    {
       "name": "True4U.png",
       "path": "/countries/thailand/True4U.png",
       "country": "thailand"
@@ -41673,8 +42828,23 @@
       "country": "thailand"
     },
     {
+      "name": "sd-tsport7.png",
+      "path": "/countries/thailand/sd-tsport7.png",
+      "country": "thailand"
+    },
+    {
+      "name": "Comedy_HD.png",
+      "path": "/countries/thailand/Comedy_HD.png",
+      "country": "thailand"
+    },
+    {
       "name": "MCOT_new.png",
       "path": "/countries/thailand/MCOT_new.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-animalplanet.png",
+      "path": "/countries/thailand/sd-animalplanet.png",
       "country": "thailand"
     },
     {
@@ -41683,8 +42853,23 @@
       "country": "thailand"
     },
     {
+      "name": "epl-2.png",
+      "path": "/countries/thailand/epl-2.png",
+      "country": "thailand"
+    },
+    {
       "name": "bein-sports-1-qa-fr.png",
       "path": "/countries/thailand/bein-sports-1-qa-fr.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-universal.png",
+      "path": "/countries/thailand/uk-universal.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-mchannel.png",
+      "path": "/countries/thailand/sd-mchannel.png",
       "country": "thailand"
     },
     {
@@ -41693,8 +42878,18 @@
       "country": "thailand"
     },
     {
+      "name": "hd-pptv.png",
+      "path": "/countries/thailand/hd-pptv.png",
+      "country": "thailand"
+    },
+    {
       "name": "muslim.png",
       "path": "/countries/thailand/muslim.png",
+      "country": "thailand"
+    },
+    {
+      "name": "nfl.png",
+      "path": "/countries/thailand/nfl.png",
       "country": "thailand"
     },
     {
@@ -41718,8 +42913,43 @@
       "country": "thailand"
     },
     {
+      "name": "hd-tpbs.png",
+      "path": "/countries/thailand/hd-tpbs.png",
+      "country": "thailand"
+    },
+    {
+      "name": "fantv.png",
+      "path": "/countries/thailand/fantv.png",
+      "country": "thailand"
+    },
+    {
       "name": "disney.png",
       "path": "/countries/thailand/disney.png",
+      "country": "thailand"
+    },
+    {
+      "name": "MONO_Plus.png",
+      "path": "/countries/thailand/MONO_Plus.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-rama.png",
+      "path": "/countries/thailand/sd-rama.png",
+      "country": "thailand"
+    },
+    {
+      "name": "natgeo.png",
+      "path": "/countries/thailand/natgeo.png",
+      "country": "thailand"
+    },
+    {
+      "name": "CH2.png",
+      "path": "/countries/thailand/CH2.png",
+      "country": "thailand"
+    },
+    {
+      "name": "rtl_entertainment.png",
+      "path": "/countries/thailand/rtl_entertainment.png",
       "country": "thailand"
     },
     {
@@ -41728,8 +42958,38 @@
       "country": "thailand"
     },
     {
+      "name": "beinrugby.png",
+      "path": "/countries/thailand/beinrugby.png",
+      "country": "thailand"
+    },
+    {
+      "name": "discoverysci.png",
+      "path": "/countries/thailand/discoverysci.png",
+      "country": "thailand"
+    },
+    {
+      "name": "fightsport.png",
+      "path": "/countries/thailand/fightsport.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-ch7.png",
+      "path": "/countries/thailand/hd-ch7.png",
+      "country": "thailand"
+    },
+    {
+      "name": "skysportgolf.png",
+      "path": "/countries/thailand/skysportgolf.png",
+      "country": "thailand"
+    },
+    {
       "name": "Workpoint.png",
       "path": "/countries/thailand/Workpoint.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-phoenixinfonews.png",
+      "path": "/countries/thailand/sd-phoenixinfonews.png",
       "country": "thailand"
     },
     {
@@ -41743,8 +43003,53 @@
       "country": "thailand"
     },
     {
+      "name": "tsp7.png",
+      "path": "/countries/thailand/tsp7.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-tsport2.png",
+      "path": "/countries/thailand/sd-tsport2.png",
+      "country": "thailand"
+    },
+    {
+      "name": "golfplus.png",
+      "path": "/countries/thailand/golfplus.png",
+      "country": "thailand"
+    },
+    {
+      "name": "science.png",
+      "path": "/countries/thailand/science.png",
+      "country": "thailand"
+    },
+    {
+      "name": "ch3.png",
+      "path": "/countries/thailand/ch3.png",
+      "country": "thailand"
+    },
+    {
       "name": "tnn24.png",
       "path": "/countries/thailand/tnn24.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-expsci.png",
+      "path": "/countries/thailand/sd-expsci.png",
+      "country": "thailand"
+    },
+    {
+      "name": "cnbc.png",
+      "path": "/countries/thailand/cnbc.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-news1.png",
+      "path": "/countries/thailand/sd-news1.png",
+      "country": "thailand"
+    },
+    {
+      "name": "Euronews.png",
+      "path": "/countries/thailand/Euronews.png",
       "country": "thailand"
     },
     {
@@ -41753,8 +43058,58 @@
       "country": "thailand"
     },
     {
+      "name": "DISNEYXD.png",
+      "path": "/countries/thailand/DISNEYXD.png",
+      "country": "thailand"
+    },
+    {
+      "name": "premierfootball4.png",
+      "path": "/countries/thailand/premierfootball4.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-film4.png",
+      "path": "/countries/thailand/uk-film4.png",
+      "country": "thailand"
+    },
+    {
+      "name": "premierfootball1.png",
+      "path": "/countries/thailand/premierfootball1.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-thaithai.png",
+      "path": "/countries/thailand/sd-thaithai.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-foxsports1eng.png",
+      "path": "/countries/thailand/hd-foxsports1eng.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-euronews.png",
+      "path": "/countries/thailand/sd-euronews.png",
+      "country": "thailand"
+    },
+    {
+      "name": "doomovie-epl2.png",
+      "path": "/countries/thailand/doomovie-epl2.png",
+      "country": "thailand"
+    },
+    {
       "name": "truefilmhd.png",
       "path": "/countries/thailand/truefilmhd.png",
+      "country": "thailand"
+    },
+    {
+      "name": "True_Select.png",
+      "path": "/countries/thailand/True_Select.png",
+      "country": "thailand"
+    },
+    {
+      "name": "cctv4.png",
+      "path": "/countries/thailand/cctv4.png",
       "country": "thailand"
     },
     {
@@ -41763,8 +43118,88 @@
       "country": "thailand"
     },
     {
+      "name": "hd-foxpremium.png",
+      "path": "/countries/thailand/hd-foxpremium.png",
+      "country": "thailand"
+    },
+    {
+      "name": "tsphd3_bkp1.png",
+      "path": "/countries/thailand/tsphd3_bkp1.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-tsport6.png",
+      "path": "/countries/thailand/sd-tsport6.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-mtvasia.png",
+      "path": "/countries/thailand/sd-mtvasia.png",
+      "country": "thailand"
+    },
+    {
+      "name": "MANGORN.png",
+      "path": "/countries/thailand/MANGORN.png",
+      "country": "thailand"
+    },
+    {
+      "name": "Star_K.png",
+      "path": "/countries/thailand/Star_K.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-ch5.png",
+      "path": "/countries/thailand/hd-ch5.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-channelnewsasia.png",
+      "path": "/countries/thailand/sd-channelnewsasia.png",
+      "country": "thailand"
+    },
+    {
+      "name": "True_Shopping.png",
+      "path": "/countries/thailand/True_Shopping.png",
+      "country": "thailand"
+    },
+    {
+      "name": "my-asp2hd.png",
+      "path": "/countries/thailand/my-asp2hd.png",
+      "country": "thailand"
+    },
+    {
       "name": "R2_0053.png",
       "path": "/countries/thailand/R2_0053.png",
+      "country": "thailand"
+    },
+    {
+      "name": "foxnews.png",
+      "path": "/countries/thailand/foxnews.png",
+      "country": "thailand"
+    },
+    {
+      "name": "SabaideeTV.png",
+      "path": "/countries/thailand/SabaideeTV.png",
+      "country": "thailand"
+    },
+    {
+      "name": "ETV.png",
+      "path": "/countries/thailand/ETV.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-eurosport.png",
+      "path": "/countries/thailand/uk-eurosport.png",
+      "country": "thailand"
+    },
+    {
+      "name": "WION.png",
+      "path": "/countries/thailand/WION.png",
+      "country": "thailand"
+    },
+    {
+      "name": "mtvlive.png",
+      "path": "/countries/thailand/mtvlive.png",
       "country": "thailand"
     },
     {
@@ -41773,8 +43208,48 @@
       "country": "thailand"
     },
     {
+      "name": "comedy.png",
+      "path": "/countries/thailand/comedy.png",
+      "country": "thailand"
+    },
+    {
+      "name": "m-channel.png",
+      "path": "/countries/thailand/m-channel.png",
+      "country": "thailand"
+    },
+    {
+      "name": "nba.png",
+      "path": "/countries/thailand/nba.png",
+      "country": "thailand"
+    },
+    {
+      "name": "logo-channel-09.png",
+      "path": "/countries/thailand/logo-channel-09.png",
+      "country": "thailand"
+    },
+    {
+      "name": "btsport3.png",
+      "path": "/countries/thailand/btsport3.png",
+      "country": "thailand"
+    },
+    {
+      "name": "afc.png",
+      "path": "/countries/thailand/afc.png",
+      "country": "thailand"
+    },
+    {
       "name": "foxp-thai.png",
       "path": "/countries/thailand/foxp-thai.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-usa.png",
+      "path": "/countries/thailand/uk-usa.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-ch8.png",
+      "path": "/countries/thailand/hd-ch8.png",
       "country": "thailand"
     },
     {
@@ -41798,8 +43273,23 @@
       "country": "thailand"
     },
     {
+      "name": "my-asp4.png",
+      "path": "/countries/thailand/my-asp4.png",
+      "country": "thailand"
+    },
+    {
       "name": "ch7fhd.png",
       "path": "/countries/thailand/ch7fhd.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-edge.png",
+      "path": "/countries/thailand/hd-edge.png",
+      "country": "thailand"
+    },
+    {
+      "name": "skynetsport6.png",
+      "path": "/countries/thailand/skynetsport6.png",
       "country": "thailand"
     },
     {
@@ -41808,8 +43298,43 @@
       "country": "thailand"
     },
     {
+      "name": "hd-ch3.png",
+      "path": "/countries/thailand/hd-ch3.png",
+      "country": "thailand"
+    },
+    {
       "name": "0159.png",
       "path": "/countries/thailand/0159.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-lfctv.png",
+      "path": "/countries/thailand/uk-lfctv.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-bbc4hd.png",
+      "path": "/countries/thailand/uk-bbc4hd.png",
+      "country": "thailand"
+    },
+    {
+      "name": "skysportmix.png",
+      "path": "/countries/thailand/skysportmix.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-inside.png",
+      "path": "/countries/thailand/sd-inside.png",
+      "country": "thailand"
+    },
+    {
+      "name": "discoveyasiax.png",
+      "path": "/countries/thailand/discoveyasiax.png",
+      "country": "thailand"
+    },
+    {
+      "name": "skynetsport4.png",
+      "path": "/countries/thailand/skynetsport4.png",
       "country": "thailand"
     },
     {
@@ -41818,8 +43343,28 @@
       "country": "thailand"
     },
     {
+      "name": "hd-starchinese.png",
+      "path": "/countries/thailand/hd-starchinese.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-paramount.png",
+      "path": "/countries/thailand/hd-paramount.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-espn.png",
+      "path": "/countries/thailand/uk-espn.png",
+      "country": "thailand"
+    },
+    {
       "name": "CartoonClub.png",
       "path": "/countries/thailand/CartoonClub.png",
+      "country": "thailand"
+    },
+    {
+      "name": "skynetsport.png",
+      "path": "/countries/thailand/skynetsport.png",
       "country": "thailand"
     },
     {
@@ -41828,8 +43373,28 @@
       "country": "thailand"
     },
     {
+      "name": "tlc.png",
+      "path": "/countries/thailand/tlc.png",
+      "country": "thailand"
+    },
+    {
       "name": "hbohits.png",
       "path": "/countries/thailand/hbohits.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-5star.png",
+      "path": "/countries/thailand/uk-5star.png",
+      "country": "thailand"
+    },
+    {
+      "name": "ie-3e.png",
+      "path": "/countries/thailand/ie-3e.png",
+      "country": "thailand"
+    },
+    {
+      "name": "MixMajor.png",
+      "path": "/countries/thailand/MixMajor.png",
       "country": "thailand"
     },
     {
@@ -41838,8 +43403,23 @@
       "country": "thailand"
     },
     {
+      "name": "sd-tmusic.png",
+      "path": "/countries/thailand/sd-tmusic.png",
+      "country": "thailand"
+    },
+    {
       "name": "truethaifilm.png",
       "path": "/countries/thailand/truethaifilm.png",
+      "country": "thailand"
+    },
+    {
+      "name": "epl-bein1.png",
+      "path": "/countries/thailand/epl-bein1.png",
+      "country": "thailand"
+    },
+    {
+      "name": "Thrill.png",
+      "path": "/countries/thailand/Thrill.png",
       "country": "thailand"
     },
     {
@@ -41853,8 +43433,43 @@
       "country": "thailand"
     },
     {
+      "name": "amazingshow.png",
+      "path": "/countries/thailand/amazingshow.png",
+      "country": "thailand"
+    },
+    {
+      "name": "my-asp1hd.png",
+      "path": "/countries/thailand/my-asp1hd.png",
+      "country": "thailand"
+    },
+    {
+      "name": "NHANG_DUNK.png",
+      "path": "/countries/thailand/NHANG_DUNK.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-filmasia.png",
+      "path": "/countries/thailand/sd-filmasia.png",
+      "country": "thailand"
+    },
+    {
+      "name": "logo-channel-ACT.png",
+      "path": "/countries/thailand/logo-channel-ACT.png",
+      "country": "thailand"
+    },
+    {
       "name": "kix.png",
       "path": "/countries/thailand/kix.png",
+      "country": "thailand"
+    },
+    {
+      "name": "mysci.png",
+      "path": "/countries/thailand/mysci.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-axn.png",
+      "path": "/countries/thailand/hd-axn.png",
       "country": "thailand"
     },
     {
@@ -41868,13 +43483,28 @@
       "country": "thailand"
     },
     {
+      "name": "sd-starchinesechannel.png",
+      "path": "/countries/thailand/sd-starchinesechannel.png",
+      "country": "thailand"
+    },
+    {
       "name": "Nationtv.png",
       "path": "/countries/thailand/Nationtv.png",
       "country": "thailand"
     },
     {
+      "name": "hd-cnn.png",
+      "path": "/countries/thailand/hd-cnn.png",
+      "country": "thailand"
+    },
+    {
       "name": "Movie1.png",
       "path": "/countries/thailand/Movie1.png",
+      "country": "thailand"
+    },
+    {
+      "name": "fashionone.png",
+      "path": "/countries/thailand/fashionone.png",
       "country": "thailand"
     },
     {
@@ -41888,8 +43518,38 @@
       "country": "thailand"
     },
     {
+      "name": "logo-channel-10.png",
+      "path": "/countries/thailand/logo-channel-10.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-sky1.png",
+      "path": "/countries/thailand/uk-sky1.png",
+      "country": "thailand"
+    },
+    {
       "name": "monoplus.png",
       "path": "/countries/thailand/monoplus.png",
+      "country": "thailand"
+    },
+    {
+      "name": "nhkworld.png",
+      "path": "/countries/thailand/nhkworld.png",
+      "country": "thailand"
+    },
+    {
+      "name": "zBusiness.png",
+      "path": "/countries/thailand/zBusiness.png",
+      "country": "thailand"
+    },
+    {
+      "name": "0012.png",
+      "path": "/countries/thailand/0012.png",
+      "country": "thailand"
+    },
+    {
+      "name": "0018.png",
+      "path": "/countries/thailand/0018.png",
       "country": "thailand"
     },
     {
@@ -41898,8 +43558,98 @@
       "country": "thailand"
     },
     {
+      "name": "truexzyte.png",
+      "path": "/countries/thailand/truexzyte.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-fox.png",
+      "path": "/countries/thailand/sd-fox.png",
+      "country": "thailand"
+    },
+    {
+      "name": "Sky_News.png",
+      "path": "/countries/thailand/Sky_News.png",
+      "country": "thailand"
+    },
+    {
+      "name": "0048.png",
+      "path": "/countries/thailand/0048.png",
+      "country": "thailand"
+    },
+    {
+      "name": "Fox_News_TH.png",
+      "path": "/countries/thailand/Fox_News_TH.png",
+      "country": "thailand"
+    },
+    {
+      "name": "logo-channel-04.png",
+      "path": "/countries/thailand/logo-channel-04.png",
+      "country": "thailand"
+    },
+    {
       "name": "babytv.png",
       "path": "/countries/thailand/babytv.png",
+      "country": "thailand"
+    },
+    {
+      "name": "golf.png",
+      "path": "/countries/thailand/golf.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-foxsports1.png",
+      "path": "/countries/thailand/hd-foxsports1.png",
+      "country": "thailand"
+    },
+    {
+      "name": "0016.png",
+      "path": "/countries/thailand/0016.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-history.png",
+      "path": "/countries/thailand/uk-history.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-nation.png",
+      "path": "/countries/thailand/sd-nation.png",
+      "country": "thailand"
+    },
+    {
+      "name": "doomovie-epl3.png",
+      "path": "/countries/thailand/doomovie-epl3.png",
+      "country": "thailand"
+    },
+    {
+      "name": "discovery.png",
+      "path": "/countries/thailand/discovery.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-foxnews.png",
+      "path": "/countries/thailand/sd-foxnews.png",
+      "country": "thailand"
+    },
+    {
+      "name": "h2hd.png",
+      "path": "/countries/thailand/h2hd.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-tvn.png",
+      "path": "/countries/thailand/hd-tvn.png",
+      "country": "thailand"
+    },
+    {
+      "name": "CCM.png",
+      "path": "/countries/thailand/CCM.png",
+      "country": "thailand"
+    },
+    {
+      "name": "0100.png",
+      "path": "/countries/thailand/0100.png",
       "country": "thailand"
     },
     {
@@ -41908,8 +43658,53 @@
       "country": "thailand"
     },
     {
+      "name": "skysportarena.png",
+      "path": "/countries/thailand/skysportarena.png",
+      "country": "thailand"
+    },
+    {
       "name": "foxthai.png",
       "path": "/countries/thailand/foxthai.png",
+      "country": "thailand"
+    },
+    {
+      "name": "lfc.png",
+      "path": "/countries/thailand/lfc.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-racing.png",
+      "path": "/countries/thailand/uk-racing.png",
+      "country": "thailand"
+    },
+    {
+      "name": "bbc.png",
+      "path": "/countries/thailand/bbc.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-cinemax.png",
+      "path": "/countries/thailand/hd-cinemax.png",
+      "country": "thailand"
+    },
+    {
+      "name": "0019.png",
+      "path": "/countries/thailand/0019.png",
+      "country": "thailand"
+    },
+    {
+      "name": "ANIMAX.png",
+      "path": "/countries/thailand/ANIMAX.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-mutv.png",
+      "path": "/countries/thailand/uk-mutv.png",
+      "country": "thailand"
+    },
+    {
+      "name": "my-asp3hd.png",
+      "path": "/countries/thailand/my-asp3hd.png",
       "country": "thailand"
     },
     {
@@ -41918,13 +43713,83 @@
       "country": "thailand"
     },
     {
+      "name": "natwild.png",
+      "path": "/countries/thailand/natwild.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-very.png",
+      "path": "/countries/thailand/sd-very.png",
+      "country": "thailand"
+    },
+    {
       "name": "dramathai.png",
       "path": "/countries/thailand/dramathai.png",
       "country": "thailand"
     },
     {
+      "name": "history.png",
+      "path": "/countries/thailand/history.png",
+      "country": "thailand"
+    },
+    {
+      "name": "Wish_Channel.png",
+      "path": "/countries/thailand/Wish_Channel.png",
+      "country": "thailand"
+    },
+    {
+      "name": "Screenshot_2.png",
+      "path": "/countries/thailand/Screenshot_2.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-moviehits.png",
+      "path": "/countries/thailand/sd-moviehits.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-gmm.png",
+      "path": "/countries/thailand/sd-gmm.png",
+      "country": "thailand"
+    },
+    {
+      "name": "KIX_Thailand.png",
+      "path": "/countries/thailand/KIX_Thailand.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-history2.png",
+      "path": "/countries/thailand/hd-history2.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-skynetsports6.png",
+      "path": "/countries/thailand/sd-skynetsports6.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-24u.png",
+      "path": "/countries/thailand/sd-24u.png",
+      "country": "thailand"
+    },
+    {
       "name": "aniplus.png",
       "path": "/countries/thailand/aniplus.png",
+      "country": "thailand"
+    },
+    {
+      "name": "CCTV9.png",
+      "path": "/countries/thailand/CCTV9.png",
+      "country": "thailand"
+    },
+    {
+      "name": "iconcerts.png",
+      "path": "/countries/thailand/iconcerts.png",
+      "country": "thailand"
+    },
+    {
+      "name": "skysportcricket.png",
+      "path": "/countries/thailand/skysportcricket.png",
       "country": "thailand"
     },
     {
@@ -41943,8 +43808,73 @@
       "country": "thailand"
     },
     {
+      "name": "skynews.png",
+      "path": "/countries/thailand/skynews.png",
+      "country": "thailand"
+    },
+    {
       "name": "MCOT_HD_text.png",
       "path": "/countries/thailand/MCOT_HD_text.png",
+      "country": "thailand"
+    },
+    {
+      "name": "epl-5.png",
+      "path": "/countries/thailand/epl-5.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-gold.png",
+      "path": "/countries/thailand/uk-gold.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-btsport2hd.png",
+      "path": "/countries/thailand/uk-btsport2hd.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-xzyte.png",
+      "path": "/countries/thailand/hd-xzyte.png",
+      "country": "thailand"
+    },
+    {
+      "name": "rtl_extreme.png",
+      "path": "/countries/thailand/rtl_extreme.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-thaifilm.png",
+      "path": "/countries/thailand/sd-thaifilm.png",
+      "country": "thailand"
+    },
+    {
+      "name": "02_FOX_Life_HD_720p.png",
+      "path": "/countries/thailand/02_FOX_Life_HD_720p.png",
+      "country": "thailand"
+    },
+    {
+      "name": "skynetsport_bk.png",
+      "path": "/countries/thailand/skynetsport_bk.png",
+      "country": "thailand"
+    },
+    {
+      "name": "telegram.png",
+      "path": "/countries/thailand/telegram.png",
+      "country": "thailand"
+    },
+    {
+      "name": "0014.png",
+      "path": "/countries/thailand/0014.png",
+      "country": "thailand"
+    },
+    {
+      "name": "Zing.png",
+      "path": "/countries/thailand/Zing.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-foxaction.png",
+      "path": "/countries/thailand/hd-foxaction.png",
       "country": "thailand"
     },
     {
@@ -41953,13 +43883,48 @@
       "country": "thailand"
     },
     {
+      "name": "sd-new.png",
+      "path": "/countries/thailand/sd-new.png",
+      "country": "thailand"
+    },
+    {
+      "name": "Boomerang_1.png",
+      "path": "/countries/thailand/Boomerang_1.png",
+      "country": "thailand"
+    },
+    {
+      "name": "tvn.png",
+      "path": "/countries/thailand/tvn.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-cartoonnetwork.png",
+      "path": "/countries/thailand/sd-cartoonnetwork.png",
+      "country": "thailand"
+    },
+    {
       "name": "Movie2.png",
       "path": "/countries/thailand/Movie2.png",
       "country": "thailand"
     },
     {
+      "name": "bbclifestyle.png",
+      "path": "/countries/thailand/bbclifestyle.png",
+      "country": "thailand"
+    },
+    {
+      "name": "nfl-network.png",
+      "path": "/countries/thailand/nfl-network.png",
+      "country": "thailand"
+    },
+    {
       "name": "nbt.png",
       "path": "/countries/thailand/nbt.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-ci.png",
+      "path": "/countries/thailand/sd-ci.png",
       "country": "thailand"
     },
     {
@@ -41973,8 +43938,43 @@
       "country": "thailand"
     },
     {
+      "name": "bein2.png",
+      "path": "/countries/thailand/bein2.png",
+      "country": "thailand"
+    },
+    {
+      "name": "btsport1.png",
+      "path": "/countries/thailand/btsport1.png",
+      "country": "thailand"
+    },
+    {
+      "name": "tsphd4.png",
+      "path": "/countries/thailand/tsphd4.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-4sevenhd.png",
+      "path": "/countries/thailand/uk-4sevenhd.png",
+      "country": "thailand"
+    },
+    {
+      "name": "Al_Jazeera_En.png",
+      "path": "/countries/thailand/Al_Jazeera_En.png",
+      "country": "thailand"
+    },
+    {
       "name": "Logo_NBT_World.png",
       "path": "/countries/thailand/Logo_NBT_World.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-asian.png",
+      "path": "/countries/thailand/hd-asian.png",
+      "country": "thailand"
+    },
+    {
+      "name": "Star_Plus.png",
+      "path": "/countries/thailand/Star_Plus.png",
       "country": "thailand"
     },
     {
@@ -41983,13 +43983,78 @@
       "country": "thailand"
     },
     {
+      "name": "truemusic.png",
+      "path": "/countries/thailand/truemusic.png",
+      "country": "thailand"
+    },
+    {
+      "name": "premierfootball3.png",
+      "path": "/countries/thailand/premierfootball3.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-mtvlive.png",
+      "path": "/countries/thailand/hd-mtvlive.png",
+      "country": "thailand"
+    },
+    {
+      "name": "arirang.png",
+      "path": "/countries/thailand/arirang.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-freesports.png",
+      "path": "/countries/thailand/uk-freesports.png",
+      "country": "thailand"
+    },
+    {
+      "name": "foxsport1.png",
+      "path": "/countries/thailand/foxsport1.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-foxnews.png",
+      "path": "/countries/thailand/uk-foxnews.png",
+      "country": "thailand"
+    },
+    {
       "name": "pptvfhd.png",
       "path": "/countries/thailand/pptvfhd.png",
       "country": "thailand"
     },
     {
+      "name": "DaraDaily.png",
+      "path": "/countries/thailand/DaraDaily.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-bbc1hd.png",
+      "path": "/countries/thailand/uk-bbc1hd.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-skysports-arena.png",
+      "path": "/countries/thailand/uk-skysports-arena.png",
+      "country": "thailand"
+    },
+    {
+      "name": "hd-nbt.png",
+      "path": "/countries/thailand/hd-nbt.png",
+      "country": "thailand"
+    },
+    {
       "name": "gmm.png",
       "path": "/countries/thailand/gmm.png",
+      "country": "thailand"
+    },
+    {
+      "name": "uk-skysports-epl.png",
+      "path": "/countries/thailand/uk-skysports-epl.png",
+      "country": "thailand"
+    },
+    {
+      "name": "sd-fyi.png",
+      "path": "/countries/thailand/sd-fyi.png",
       "country": "thailand"
     },
     {
@@ -48150,6 +50215,11 @@
     {
       "name": "NO-NRK Super _ NRK3 HD.png",
       "path": "/countries/nordic/norway/NO-NRK Super _ NRK3 HD.png",
+      "country": "nordic/norway"
+    },
+    {
+      "name": "matkanalen.png",
+      "path": "/countries/nordic/norway/matkanalen.png",
       "country": "nordic/norway"
     },
     {
