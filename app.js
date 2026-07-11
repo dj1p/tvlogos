@@ -3,9 +3,9 @@
 // ============================================================================
 let allLogos = [];
 let displayedLogos = [];
-const LOGOS_PER_PAGE = 100;
+const LOGOS_PER_PAGE = 60;
 let currentPage = 1;
-let scrollHandler = null;
+let scrollObserver = null;
 
 const el = {
   loading: document.getElementById('loading'),
@@ -210,7 +210,7 @@ function renderLogos(logos, replace) {
     const fullUrl = window.location.origin + logo.path;
     return `
       <div class="logo-card" data-url="${escHtml(fullUrl)}" tabindex="0" role="button" aria-label="Copy URL for ${escHtml(logo.name)}">
-        <img src="${escHtml(logo.path)}" alt="${escHtml(logo.name)}" loading="lazy"
+        <img src="${escHtml(logo.path)}" alt="${escHtml(logo.name)}" loading="lazy" decoding="async"
              onerror="markBroken(this)">
         <div class="logo-name">${escHtml(logo.name.replace(IMAGE_EXT_RE, ''))}</div>
         <span class="copy-chip">Copy URL</span>
@@ -239,24 +239,31 @@ function markBroken(img) {
 }
 
 function setupInfiniteScroll(logos) {
-  if (scrollHandler) window.removeEventListener('scroll', scrollHandler);
+  if (scrollObserver) scrollObserver.disconnect();
+
+  let sentinel = document.getElementById('scrollSentinel');
+  if (!sentinel) {
+    sentinel = document.createElement('div');
+    sentinel.id = 'scrollSentinel';
+    sentinel.style.height = '1px';
+    el.logosGrid.insertAdjacentElement('afterend', sentinel);
+  }
+
   let loading = false;
-  scrollHandler = function () {
-    if (loading) return;
-    const threshold = document.documentElement.scrollHeight - 600;
-    if (window.innerHeight + window.scrollY >= threshold) {
-      loading = true;
-      const start = currentPage * LOGOS_PER_PAGE;
-      const next = logos.slice(start, start + LOGOS_PER_PAGE);
-      if (next.length > 0) {
-        currentPage++;
-        displayedLogos = displayedLogos.concat(next);
-        renderLogos(next, false);
-      }
-      setTimeout(() => { loading = false; }, 100);
+  scrollObserver = new IntersectionObserver((entries) => {
+    if (!entries[0].isIntersecting || loading) return;
+    loading = true;
+    const start = currentPage * LOGOS_PER_PAGE;
+    const next = logos.slice(start, start + LOGOS_PER_PAGE);
+    if (next.length > 0) {
+      currentPage++;
+      displayedLogos = displayedLogos.concat(next);
+      renderLogos(next, false);
     }
-  };
-  window.addEventListener('scroll', scrollHandler);
+    loading = false;
+  }, { rootMargin: '600px' });
+
+  scrollObserver.observe(sentinel);
 }
 
 // ============================================================================
