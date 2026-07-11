@@ -23,9 +23,15 @@ function walk(dir, baseDir, logos, stats) {
         continue;
       }
       const relDir = path.relative(baseDir, dir).split(path.sep).join('/');
+      const stem = entry.name.replace(IMAGE_EXT, '');
       logos.push({
         name: entry.name,
         path: `/countries/${relDir}/${entry.name}`,
+        // Matches the naming convention generate-thumbnails.js writes to --
+        // if that script hasn't been run for a given image yet, the path is
+        // still predictable, and app.js falls back to the full image if the
+        // thumbnail 404s.
+        thumb: `/thumbs/${relDir}/${stem}.webp`,
         country: relDir,
       });
     }

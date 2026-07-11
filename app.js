@@ -208,10 +208,11 @@ function displayLogos(logos) {
 function renderLogos(logos, replace) {
   const html = logos.map(logo => {
     const fullUrl = window.location.origin + logo.path;
+    const gridSrc = logo.thumb || logo.path;
     return `
-      <div class="logo-card" data-url="${escHtml(fullUrl)}" tabindex="0" role="button" aria-label="Copy URL for ${escHtml(logo.name)}">
-        <img src="${escHtml(logo.path)}" alt="${escHtml(logo.name)}" loading="lazy" decoding="async"
-             onerror="markBroken(this)">
+      <div class="logo-card" data-url="${escHtml(fullUrl)}" data-full="${escHtml(logo.path)}" tabindex="0" role="button" aria-label="Copy URL for ${escHtml(logo.name)}">
+        <img src="${escHtml(gridSrc)}" alt="${escHtml(logo.name)}" loading="lazy" decoding="async"
+             onerror="handleImgError(this)">
         <div class="logo-name">${escHtml(logo.name.replace(IMAGE_EXT_RE, ''))}</div>
         <span class="copy-chip">Copy URL</span>
       </div>`;
@@ -225,6 +226,21 @@ function renderLogos(logos, replace) {
     card.addEventListener('click', activate);
     card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(); } });
   });
+}
+
+// A thumbnail 404 (not yet generated, e.g. for a logo added before the last
+// generate-thumbnails.js run) is a completely different situation from the
+// SOURCE file itself being missing -- the former just needs the full image
+// as a fallback, the latter is a genuinely broken entry worth flagging.
+function handleImgError(img) {
+  const card = img.closest('.logo-card');
+  const triedThumb = !img.dataset.triedFull;
+  if (triedThumb && card && card.dataset.full && img.src !== window.location.origin + card.dataset.full) {
+    img.dataset.triedFull = 'true';
+    img.src = card.dataset.full;
+    return;
+  }
+  markBroken(img);
 }
 
 function markBroken(img) {

@@ -1,5 +1,6 @@
 import os
 import json
+import re
 
 # Every extension actually present in countries/ (checked against the real
 # repo: 10,765 .png + 10 .jpg as of this writing). The old version only
@@ -33,9 +34,15 @@ def generate_manifest():
                 file = str(file)
                 rel_path = str(rel_path)
 
+                stem = re.sub(r'\.(png|jpe?g|webp|svg|gif)$', '', file, flags=re.IGNORECASE)
                 logo_entry = {
                     "name": file,
                     "path": f"/countries/{rel_path}/{file}",
+                    # Matches the naming convention generate-thumbnails.js
+                    # writes to -- if that script hasn't been run for a given
+                    # image yet, the path is still predictable, and app.js
+                    # falls back to the full image if the thumbnail 404s.
+                    "thumb": f"/thumbs/{rel_path}/{stem}.webp",
                     "country": rel_path,
                 }
                 logos.append(logo_entry)
