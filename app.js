@@ -21,12 +21,6 @@ const el = {
 
 const IMAGE_EXT_RE = /\.(png|jpe?g|webp|svg|gif)$/i;
 
-// ============================================================================
-// Custom combobox for country filter -- same component as epg-browser, for
-// the same reason: native <select> popups are rendered by the OS on some
-// browsers and can silently ignore page CSS (white-on-white text), and this
-// filter has 65+ options where a search box inside genuinely helps.
-// ============================================================================
 function createCombobox(container, { placeholder, onChange }) {
   let options = [];
   let selected = '';
@@ -59,7 +53,7 @@ function createCombobox(container, { placeholder, onChange }) {
   searchWrap.className = 'combo-search';
   const searchInput = document.createElement('input');
   searchInput.type = 'text';
-  searchInput.placeholder = 'Filterâ€¦';
+  searchInput.placeholder = 'Filter…';
   searchInput.autocomplete = 'off';
   searchWrap.appendChild(searchInput);
   panel.appendChild(searchWrap);
@@ -142,9 +136,6 @@ const countryCombo = createCombobox(document.getElementById('countryCombo'), {
   onChange: () => filterLogos(),
 });
 
-// ============================================================================
-// Loading
-// ============================================================================
 async function loadLogos() {
   try {
     const response = await fetch('/logos-manifest.json');
@@ -171,25 +162,36 @@ async function loadLogos() {
 }
 
 function populateCountryFilter() {
-  const counts = {};
+  const topCounts = {};
+  const fullCounts = {};
+
   for (const logo of allLogos) {
-    const c = (logo.country || 'unknown').split('/')[0]; // collapse subfolders like "germany/sky-sport"
-    counts[c] = (counts[c] || 0) + 1;
+    const full = logo.country || 'unknown';
+    const top = full.split('/')[0];
+    topCounts[top] = (topCounts[top] || 0) + 1;
+    if (full.includes('/')) {
+      fullCounts[full] = (fullCounts[full] || 0) + 1;
+    }
   }
-  const countries = Object.keys(counts).sort();
-  countryCombo.setOptions(countries.map(c => ({
-    value: c,
-    label: `${prettyCountry(c)} (${counts[c].toLocaleString()})`,
-  })));
+
+  const options = [];
+  for (const top of Object.keys(topCounts).sort()) {
+    options.push({ value: top, label: `${prettyCountry(top)} (${topCounts[top].toLocaleString()})` });
+    const children = Object.keys(fullCounts).filter(f => f.startsWith(top + '/')).sort();
+    for (const full of children) {
+      const parts = full.split('/');
+      const label = parts.map(prettyCountry).join(' › ');
+      options.push({ value: full, label: `${label} (${fullCounts[full].toLocaleString()})` });
+    }
+  }
+
+  countryCombo.setOptions(options);
 }
 
 function prettyCountry(slug) {
   return slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 }
 
-// ============================================================================
-// Rendering
-// ============================================================================
 function displayLogos(logos) {
   if (logos.length === 0) {
     el.logosGrid.classList.add('hidden');
@@ -228,10 +230,6 @@ function renderLogos(logos, replace) {
   });
 }
 
-// A thumbnail 404 (not yet generated, e.g. for a logo added before the last
-// generate-thumbnails.js run) is a completely different situation from the
-// SOURCE file itself being missing -- the former just needs the full image
-// as a fallback, the latter is a genuinely broken entry worth flagging.
 function handleImgError(img) {
   const card = img.closest('.logo-card');
   const triedThumb = !img.dataset.triedFull;
@@ -250,7 +248,7 @@ function markBroken(img) {
   card.classList.add('is-broken');
   const badge = document.createElement('div');
   badge.className = 'broken-badge';
-  badge.textContent = 'âš  file missing';
+  badge.textContent = '? file missing';
   card.insertBefore(badge, card.firstChild);
 }
 
@@ -282,9 +280,6 @@ function setupInfiniteScroll(logos) {
   scrollObserver.observe(sentinel);
 }
 
-// ============================================================================
-// Search / filter
-// ============================================================================
 let searchTimer;
 function handleSearchInput() {
   clearTimeout(searchTimer);
@@ -308,7 +303,12 @@ function filterLogos() {
     const matchesSearch = searchTerm === '' || words.every(w =>
       normalized.includes(' ' + w) || normalized.startsWith(w) || normalized.includes('-' + w)
     );
-    const matchesCountry = !countryFilter || (logo.country || '').split('/')[0] === countryFilter;
+    const logoCountry = logo.country || '';
+    const matchesCountry = !countryFilter || (
+      countryFilter.includes('/')
+        ? logoCountry === countryFilter
+        : logoCountry.split('/')[0] === countryFilter
+    );
     return matchesSearch && matchesCountry;
   });
 
@@ -327,9 +327,6 @@ function resetFilters() {
   filterLogos();
 }
 
-// ============================================================================
-// Clipboard
-// ============================================================================
 async function copyToClipboard(text, card) {
   try {
     await navigator.clipboard.writeText(text);
@@ -356,9 +353,6 @@ function escHtml(t) {
   return d.innerHTML;
 }
 
-// ============================================================================
-// Init
-// ============================================================================
 el.searchBox.addEventListener('input', handleSearchInput);
 el.resetBtn.addEventListener('click', resetFilters);
 

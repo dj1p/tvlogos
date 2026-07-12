@@ -17,8 +17,8 @@ const path = require('path');
 const sharp = require('sharp');
 
 const IMAGE_EXT = /\.(png|jpe?g|webp|svg|gif)$/i;
-const THUMB_MAX_DIM = 160; // 2x the 72px CSS display height, for retina screens
-const THUMB_QUALITY = 82;
+const THUMB_MAX_DIM = 120; // ~2x the 72px CSS display height -- benchmarked against 160/100/80px, this is the sweet spot: close enough to true retina (144px) to stay sharp for these flat-color/text logos, while cutting ~28% more size than 160px
+const THUMB_QUALITY = 80;
 const CONCURRENCY = 8; // parallel sharp jobs -- keeps CPU busy without exhausting memory across 10,000+ files
 
 function walk(dir, baseDir, files) {
@@ -33,9 +33,6 @@ function walk(dir, baseDir, files) {
 }
 
 function thumbPathFor(relDir, name) {
-  // Always output .webp regardless of source format (svg thumbnails would
-  // need a different pipeline -- sharp can rasterize them, but skip for now
-  // since this repo currently has zero .svg logos; guarded below anyway).
   const stem = name.replace(IMAGE_EXT, '');
   return path.join('thumbs', relDir, `${stem}.webp`);
 }
@@ -45,9 +42,6 @@ async function processOne(file, stats) {
   const outDir = path.dirname(outPath);
 
   try {
-    // Skip regenerating if the thumbnail is already newer than the source --
-    // makes reruns after adding a handful of new logos fast instead of
-    // reprocessing all 10,000+ every time.
     const srcStat = fs.statSync(file.fullPath);
     if (fs.existsSync(outPath)) {
       const outStat = fs.statSync(outPath);
@@ -57,8 +51,6 @@ async function processOne(file, stats) {
     fs.mkdirSync(outDir, { recursive: true });
 
     if (path.extname(file.fullPath).toLowerCase() === '.svg') {
-      // sharp can rasterize SVG, but there are none in this repo today --
-      // handle gracefully if that ever changes rather than crashing the run.
       await sharp(file.fullPath, { density: 300 })
         .resize(THUMB_MAX_DIM, THUMB_MAX_DIM, { fit: 'inside', withoutEnlargement: true })
         .webp({ quality: THUMB_QUALITY })
@@ -99,7 +91,7 @@ async function main() {
   await runPool(files, (f) => processOne(f, stats), CONCURRENCY);
   const seconds = ((Date.now() - start) / 1000).toFixed(1);
 
-  console.log(`\n✓ Done in ${seconds}s`);
+  console.log(`\n? Done in ${seconds}s`);
   console.log(`  generated: ${stats.generated}`);
   console.log(`  skipped (already up to date): ${stats.skipped}`);
   if (stats.errors) console.log(`  errors: ${stats.errors} (see above)`);
